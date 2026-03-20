@@ -497,3 +497,81 @@ footer {
   .about { flex-direction: column; text-align: center; align-items: center; }
   .skills-row { justify-content: center; }
 }
+
+/* SCROLL PROGRESS BAR */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--accent);
+  z-index: 200;
+  transition: width 0.1s linear;
+}
+
+/* TECH LOGO ICONS */
+.tech-logo i {
+  font-size: 1.1rem;
+  vertical-align: middle;
+  margin-right: 4px;
+  color: var(--accent);
+  opacity: 0.8;
+}
+
+/* PAIN ICON — Font Awesome */
+.pain-icon i {
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+/* SCROLL ANIMATIONS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HERO ENTRANCE STAGGER */
+.hero-text .label,
+.hero-text h1,
+.hero-text .hero-sub,
+.hero-text .hero-btns,
+.hero-photo {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hero-text .label.hero-visible { opacity: 1; transform: translateY(0); transition-delay: 0ms; }
+.hero-text h1.hero-visible      { opacity: 1; transform: translateY(0); transition-delay: 100ms; }
+.hero-text .hero-sub.hero-visible{ opacity: 1; transform: translateY(0); transition-delay: 200ms; }
+.hero-text .hero-btns.hero-visible{ opacity: 1; transform: translateY(0); transition-delay: 300ms; }
+.hero-photo.hero-visible         { opacity: 1; transform: translateY(0); transition-delay: 400ms; }
+
+/* FLOATING HERO PHOTO */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+
+.hero-photo.hero-visible {
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
