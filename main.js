@@ -404,8 +404,12 @@ if (heroBgPhoto && heroSection) {
     // progress 0→1 over the first 60% of the hero height
     const progress = Math.min(Math.max(scrolled / (heroHeight * 0.6), 0), 1);
     heroBgPhoto.style.opacity = (progress * 0.6).toString();
-    // hero photo fades out as blur fades in
-    if (heroPhotoImg) heroPhotoImg.style.opacity = (1 - progress).toString();
+    // hero photo blurs and fades as scroll progresses
+    if (heroPhotoImg) {
+      const blurPx = progress * 14;
+      heroPhotoImg.style.filter = blurPx > 0.5 ? `blur(${blurPx.toFixed(1)}px)` : '';
+      heroPhotoImg.style.opacity = (1 - progress).toString();
+    }
   }, { passive: true });
 }
 
