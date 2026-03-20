@@ -101,7 +101,7 @@ h4 { font-size: 0.95rem; font-weight: 700; }
 
 .nav-logo {
   font-family: 'Dancing Script', cursive;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 700;
   background: linear-gradient(135deg, var(--accent) 0%, #9090dd 100%);
   -webkit-background-clip: text;
@@ -149,6 +149,7 @@ h4 { font-size: 0.95rem; font-weight: 700; }
 .nav-cta {
   font-size: 0.9rem;
   padding: 0.55rem 1.4rem;
+  margin-left: 0.75rem;
   border-radius: 50px;
   background: linear-gradient(135deg, var(--accent) 0%, #6868bb 100%);
   color: #fff !important;
@@ -219,9 +220,11 @@ h4 { font-size: 0.95rem; font-weight: 700; }
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  padding: 1.5rem 6%;
+  padding: 0.75rem 6% 2rem;
   flex-wrap: wrap;
   justify-content: center;
+  background: var(--bg);
+  border: none;
 }
 
 .tech-strip-label {
