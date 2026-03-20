@@ -100,33 +100,15 @@ h4 { font-size: 0.95rem; font-weight: 700; }
 }
 
 .nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  font-weight: 800;
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: var(--text);
-}
-
-.logo-mark {
-  width: 30px;
-  height: 30px;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.95rem;
-  font-weight: 900;
-  flex-shrink: 0;
-  letter-spacing: -0.02em;
-}
-
-.logo-text {
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.7rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent) 0%, #9090dd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  letter-spacing: 0.01em;
 }
 
 .nav-links {
@@ -209,14 +191,6 @@ h4 { font-size: 0.95rem; font-weight: 700; }
   color: #aaa;
 }
 
-.tech-logos { display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; }
-
-.tech-logo {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #888;
-  opacity: 0.75;
-}
 
 /* PROBLEM */
 .problem {
@@ -547,13 +521,53 @@ footer {
   transition: width 0.1s linear;
 }
 
-/* TECH LOGO ICONS */
-.tech-logo i {
-  font-size: 1.2rem;
-  vertical-align: middle;
-  margin-right: 5px;
+/* HERO BG PHOTO (scroll blur effect) */
+.hero-bg-photo {
+  position: fixed;
+  inset: 0;
+  background: url('assets/photo.jpg') center top / cover no-repeat;
+  filter: blur(28px);
+  opacity: 0;
+  transform: scale(1.08);
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
-/* Devicons colored: use brand color; FA icons get accent */
+
+/* TECH LOGOS — vertical card style */
+.tech-logos { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; justify-content: center; }
+
+.tech-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  min-width: 72px;
+  transition: border-color 0.2s, transform 0.2s;
+  cursor: default;
+}
+
+.tech-logo:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.tech-logo i {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.tech-logo span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* FA icons in tech strip get accent color */
 .tech-logo i.fa-solid {
   color: var(--accent);
 }

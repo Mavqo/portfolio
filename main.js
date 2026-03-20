@@ -387,6 +387,20 @@ document.addEventListener('DOMContentLoaded', () => {
   heroEls.forEach(el => el.classList.add('hero-visible'));
 });
 
+// ─── Hero bg photo scroll blur ─────────────────────────────────────────────────
+const heroBgPhoto = document.querySelector('.hero-bg-photo');
+const heroSection = document.getElementById('hero');
+
+if (heroBgPhoto && heroSection) {
+  window.addEventListener('scroll', () => {
+    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+    const scrolled = window.scrollY;
+    // Start fading in as user leaves the hero top, reach full opacity by hero bottom
+    const progress = Math.min(Math.max(scrolled / heroBottom, 0), 1);
+    heroBgPhoto.style.opacity = (progress * 0.55).toString();
+  }, { passive: true });
+}
+
 // ─── Scroll-triggered fade-in (Intersection Observer) ─────────────────────────
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
