@@ -176,9 +176,7 @@ h4 { font-size: 0.95rem; font-weight: 700; }
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  padding: 1.2rem 6%;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 6%;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -194,7 +192,7 @@ h4 { font-size: 0.95rem; font-weight: 700; }
 
 /* PROBLEM */
 .problem {
-  background: var(--bg-alt);
+  background: var(--bg);
   padding: var(--section-pad);
   text-align: center;
 }
@@ -217,6 +215,7 @@ h4 { font-size: 0.95rem; font-weight: 700; }
   min-width: 220px;
   max-width: 260px;
   text-align: left;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
 
 .pain-icon { font-size: 1.5rem; margin-bottom: 0.6rem; }
@@ -225,7 +224,11 @@ h4 { font-size: 0.95rem; font-weight: 700; }
 
 /* SERVICES */
 .services {
+  background: var(--bg);
   padding: var(--section-pad);
+}
+
+.services-inner {
   max-width: var(--max-width);
   margin: 0 auto;
 }
