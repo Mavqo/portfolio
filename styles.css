@@ -453,3 +453,47 @@ footer {
   padding: 1.2rem 6%;
   font-size: 0.82rem;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  :root { --section-pad: 3rem 5%; }
+
+  /* Nav */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 6%;
+    gap: 1rem;
+  }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: block; }
+  .nav-cta { display: none; }
+
+  /* Hero */
+  .hero { flex-direction: column; padding: 3rem 5% 2.5rem; text-align: center; }
+  .hero-text .hero-sub { max-width: 100%; }
+  .hero-btns { justify-content: center; }
+  .hero-photo { width: 180px; height: 200px; }
+
+  /* Pain grid */
+  .pain-card { max-width: 100%; min-width: 100%; }
+
+  /* Services */
+  .service-card { min-width: 100%; }
+
+  /* Steps */
+  .steps { flex-direction: column; align-items: center; }
+
+  /* Projects */
+  .project-card { max-width: 100%; min-width: 100%; }
+
+  /* About */
+  .about { flex-direction: column; text-align: center; align-items: center; }
+  .skills-row { justify-content: center; }
+}
