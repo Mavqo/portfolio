@@ -337,7 +337,7 @@ function setTheme(dark) {
   localStorage.setItem('theme', dark ? 'dark' : 'light');
 
   const photoSrc = dark ? 'assets/photo-dark.jpg' : 'assets/photo-light.jpg';
-  document.querySelectorAll('.hero-photo img, .about-photo img').forEach(img => {
+  document.querySelectorAll('.hero-photo img').forEach(img => {
     img.src = photoSrc;
   });
 }
@@ -395,14 +395,17 @@ document.addEventListener('DOMContentLoaded', () => {
 // ─── Hero bg photo scroll blur ─────────────────────────────────────────────────
 const heroBgPhoto = document.querySelector('.hero-bg-photo');
 const heroSection = document.getElementById('hero');
+const heroPhotoImg = document.querySelector('.hero-photo img');
 
 if (heroBgPhoto && heroSection) {
   window.addEventListener('scroll', () => {
-    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+    const heroHeight = heroSection.offsetHeight;
     const scrolled = window.scrollY;
-    // Start fading in as user leaves the hero top, reach full opacity by hero bottom
-    const progress = Math.min(Math.max(scrolled / heroBottom, 0), 1);
-    heroBgPhoto.style.opacity = (progress * 0.55).toString();
+    // progress 0→1 over the first 60% of the hero height
+    const progress = Math.min(Math.max(scrolled / (heroHeight * 0.6), 0), 1);
+    heroBgPhoto.style.opacity = (progress * 0.6).toString();
+    // hero photo fades out as blur fades in
+    if (heroPhotoImg) heroPhotoImg.style.opacity = (1 - progress).toString();
   }, { passive: true });
 }
 

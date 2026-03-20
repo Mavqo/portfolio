@@ -113,11 +113,14 @@ h4 { font-size: 0.95rem; font-weight: 700; }
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 2.2rem;
   list-style: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.nav-links a { font-size: 0.9rem; color: var(--text-muted); transition: color 0.2s; }
+.nav-links a { font-size: 1rem; font-weight: 500; color: var(--text-muted); transition: color 0.2s; }
 .nav-links a:hover { color: var(--text); }
 
 .nav-cta { font-size: 0.85rem; padding: 0.45rem 1.1rem; }
@@ -165,11 +168,12 @@ h4 { font-size: 0.95rem; font-weight: 700; }
 }
 
 .hero-photo img {
-  height: clamp(420px, 78vh, 660px);
+  height: clamp(520px, 90vh, 800px);
   width: auto;
   display: block;
   object-fit: contain;
   object-position: bottom center;
+  transition: opacity 0.1s linear;
 }
 
 /* TECH STRIP */
@@ -480,6 +484,7 @@ footer {
     top: 100%;
     left: 0;
     right: 0;
+    transform: none;
     background: var(--bg);
     border-bottom: 1px solid var(--border);
     padding: 1rem 6%;
