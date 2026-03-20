@@ -296,10 +296,14 @@ function applyTranslations(lang) {
 const langBtn = document.querySelector('.lang-btn');
 const langMenu = document.querySelector('.lang-menu');
 const langCurrent = document.querySelector('.lang-current');
+const langFlag = document.querySelector('.lang-flag');
+
+const langFlags = { en: '🇬🇧', it: '🇮🇹', de: '🇩🇪', fr: '🇫🇷' };
 
 function setLang(lang) {
   applyTranslations(lang);
   langCurrent.textContent = lang.toUpperCase();
+  if (langFlag) langFlag.textContent = langFlags[lang] || '';
   document.documentElement.lang = lang;
   localStorage.setItem('lang', lang);
 
