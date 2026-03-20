@@ -874,6 +874,11 @@ footer {
   box-shadow: 0 4px 16px rgba(0,0,0,0.4);
 }
 
+[data-theme="dark"] .btn-outline {
+  border-color: rgba(255,255,255,0.75);
+  color: #fff;
+}
+
 /* Responsive: hide lang+theme toggle on very small screens if needed */
 @media (max-width: 480px) {
   .lang-current { display: none; }
