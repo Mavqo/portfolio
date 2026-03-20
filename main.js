@@ -335,6 +335,11 @@ function setTheme(dark) {
   document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
   themeIcon.className = dark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
   localStorage.setItem('theme', dark ? 'dark' : 'light');
+
+  const photoSrc = dark ? 'assets/photo-dark.jpg' : 'assets/photo-light.jpg';
+  document.querySelectorAll('.hero-photo img, .about-photo img').forEach(img => {
+    img.src = photoSrc;
+  });
 }
 
 themeToggle.addEventListener('click', () => {

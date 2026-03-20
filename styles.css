@@ -156,8 +156,8 @@ h4 { font-size: 0.95rem; font-weight: 700; }
 .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
 
 .hero-photo {
-  width: 260px;
-  height: 300px;
+  width: 320px;
+  height: 440px;
   border-radius: var(--radius-xl);
   overflow: hidden;
   flex-shrink: 0;
@@ -493,7 +493,7 @@ footer {
   .hero-inner { flex-direction: column; text-align: center; }
   .hero-text .hero-sub { max-width: 100%; }
   .hero-btns { justify-content: center; }
-  .hero-photo { width: 180px; height: 200px; }
+  .hero-photo { width: 220px; height: 280px; }
 
   /* Pain grid */
   .pain-card { max-width: 100%; min-width: 100%; }
@@ -528,13 +528,17 @@ footer {
 .hero-bg-photo {
   position: fixed;
   inset: 0;
-  background: url('assets/photo.jpg') center top / cover no-repeat;
-  filter: blur(28px);
+  background: url('assets/photo-light.jpg') center top / cover no-repeat;
+  filter: blur(32px);
   opacity: 0;
-  transform: scale(1.08);
+  transform: scale(1.1);
   z-index: -1;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.35s ease;
+}
+
+[data-theme="dark"] .hero-bg-photo {
+  background-image: url('assets/photo-dark.jpg');
 }
 
 /* TECH LOGOS — vertical card style */
