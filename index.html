@@ -233,7 +233,7 @@
   <section class="contact" id="contact">
     <h2 data-i18n="contact-h2">Ready to start a project?</h2>
     <p class="section-sub" data-i18n="contact-sub">Tell me what you need. I'll get back to you within 24 hours.</p>
-    <form class="contact-form" action="https://formspree.io/f/mgonqyyw" method="POST">
+    <form class="contact-form" id="contact-form" action="https://formspree.io/f/mgonqyyw" method="POST">
       <label for="name" class="sr-only" data-i18n="form-name">Your name</label>
       <input type="text" id="name" name="name" placeholder="Your name" data-i18n-placeholder="form-name" required />
       <label for="email" class="sr-only" data-i18n="form-email">Your email</label>
@@ -242,11 +242,34 @@
       <textarea id="message" name="message" placeholder="What do you need help with?" data-i18n-placeholder="form-message" required></textarea>
       <button type="submit" class="btn btn-light" data-i18n="form-submit">Send message →</button>
     </form>
+    <div class="contact-success" id="contact-success" aria-live="polite">
+      <div class="contact-success-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <h3>Message sent!</h3>
+      <p>I'll get back to you within 24 hours.</p>
+    </div>
+    <div class="contact-socials">
+      <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p data-i18n="footer">© 2026 Marco · Web & AI Automation · Switzerland</p>
+    <div class="footer-inner">
+      <p data-i18n="footer">© 2026 Marco · Web & AI Automation · Switzerland</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
   </footer>
 
   <script src="main.js"></script>
