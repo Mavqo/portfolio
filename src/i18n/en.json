@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Marco — Web Developer & AI Automation in Ticino",
+    "description": "I help small businesses grow online with fast websites and AI automation systems. Based in Ticino, I work with clients across Switzerland."
+  },
+  "nav": {
+    "services": "Services",
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact Me"
+  },
+  "hero": {
+    "label": "Web Developer & AI Automation in Ticino",
+    "headline": "Your ",
+    "headlineHighlight": "modern",
+    "headlineAfter": " website, ready in days — not months",
+    "description": "I help small businesses and professionals grow online with fast websites and systems that automate repetitive work. Based in Ticino, I work with clients across Switzerland.",
+    "ctaPrimary": "Let's talk about your project →",
+    "ctaSecondary": "See my work ↓",
+    "techStack": "Technologies"
+  },
+  "problems": {
+    "label": "Sound familiar?",
+    "headline": "Running a business is hard enough",
+    "description": "You shouldn't worry about your website or lose hours to repetitive tasks",
+    "cards": {
+      "website": {
+        "title": "Is your website driving customers away?",
+        "description": "An outdated or poorly mobile-optimized website destroys trust in seconds. Customers expect professionalism — and they judge you by your website."
+      },
+      "time": {
+        "title": "Spending hours on tasks that could do themselves?",
+        "description": "Replying to the same emails, entering data manually, keeping appointments in your head. These activities consume time you could invest in growing your business."
+      },
+      "tech": {
+        "title": "Does technology feel like an obstacle?",
+        "description": "Too many tools, too much complexity, no one to explain simply. You shouldn't need to be a tech expert to have tools that work."
+      }
+    }
+  },
+  "services": {
+    "label": "What I do",
+    "headline": "Two services. Concrete results.",
+    "description": "Focused on what really makes a difference for small businesses",
+    "web": {
+      "tag": "Web Development",
+      "title": "Websites that convert visitors into customers",
+      "description": "I build fast, secure, and easy-to-manage websites. Every project is tailored to your business, not to impress other developers.",
+      "features": [
+        "Responsive design: perfect on phone, tablet, and computer",
+        "Optimized speed: loading in under 3 seconds",
+        "Basic SEO: your customers find you on Google",
+        "CMS included: update content yourself"
+      ]
+    },
+    "automation": {
+      "tag": "AI Automation",
+      "title": "Let AI do the repetitive work",
+      "description": "I connect your tools and automate workflows. You save time, reduce errors, and focus on what really matters.",
+      "features": [
+        "Tool integration: I connect your existing software",
+        "Automated workflows: emails, follow-ups, data management",
+        "AI assistants: automatic responses to customers 24/7",
+        "Automatic reports: important data at a glance"
+      ]
+    }
+  },
+  "process": {
+    "label": "The process",
+    "headline": "Simple. Fast. No surprises.",
+    "description": "From first message to live product — here's how we work together",
+    "steps": {
+      "1": {
+        "title": "Discovery call",
+        "description": "We start with a free 30-minute call. You tell me about your business, goals, and problems. I understand what you really need before proposing a solution."
+      },
+      "2": {
+        "title": "Build and develop",
+        "description": "I keep you updated throughout the process. You receive regular previews and your feedback is integral to the work. No surprises at delivery."
+      },
+      "3": {
+        "title": "Launch and support",
+        "description": "The website goes live, everything works, you're happy. But it doesn't end there: I show you how to manage content and remain available for questions and small changes."
+      }
+    }
+  },
+  "projects": {
+    "label": "My work",
+    "headline": "Recent projects",
+    "description": "Concrete examples of websites and automations built for clients",
+    "items": {
+      "osteria": {
+        "title": "Osteria Bellavista — Restaurant in Bissone",
+        "description": "Elegant and functional website for an Italian restaurant on Lake Lugano. Online reservations, digital menu, and social media integration.",
+        "cta": "View project →"
+      },
+      "crm": {
+        "title": "CRM Automation",
+        "description": "Automation system for lead management and automatic follow-ups."
+      },
+      "dashboard": {
+        "title": "Analytics Dashboard",
+        "description": "Data visualization and automatic reports for small businesses."
+      }
+    },
+    "comingSoon": "Coming soon"
+  },
+  "about": {
+    "headline": "Hi, I'm Marco",
+    "paragraphs": [
+      "I develop websites and automation systems for small businesses that want to grow online without complications. After years of experience in the digital industry, I've chosen to specialize in what I do best: creating digital tools that work, without unnecessary frills.",
+      "I believe in simplicity and transparency. I don't sell complicated solutions — I build tools that solve real problems. My approach is direct: I listen, understand, build. No jargon, no impossible promises. Just concrete results.",
+      "I'm based in Ticino and work primarily with clients in Italian Switzerland and across Switzerland. I speak Italian, German, and English — and I know how important it is to communicate in the client's language."
+    ]
+  },
+  "contact": {
+    "headline": "Ready to grow your business?",
+    "description": "Write to me and I'll respond within 24 hours. A brief conversation helps us understand if I can help you.",
+    "form": {
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Your email",
+      "messagePlaceholder": "Tell me about your project",
+      "submit": "Send message →",
+      "sending": "Sending...",
+      "error": "Error — please try again"
+    },
+    "success": {
+      "title": "Thank you!",
+      "message": "I've received your message and will get back to you as soon as possible."
+    }
+  },
+  "footer": {
+    "copyright": "Made with ❤️ in Ticino"
+  }
+}

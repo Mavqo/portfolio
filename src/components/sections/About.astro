@@ -1,0 +1,96 @@
+---
+---
+
+<section id="about" class="py-20 px-[6%] bg-slate-50 dark:bg-slate-800/50">
+  <div class="max-w-[1100px] mx-auto">
+    <div class="flex flex-col md:flex-row items-center gap-10 md:gap-12">
+      {/* Photo */}
+      <div class="flex-shrink-0">
+        <div class="relative">
+          <div class="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-2xl overflow-hidden shadow-2xl bg-slate-200 dark:bg-slate-700 ring-4 ring-white dark:ring-slate-700">
+            <img 
+              src="/assets/photo-about.jpg" 
+              alt="Marco - Sviluppatore Web e Automazione"
+              class="w-full h-full object-cover"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="w-full h-full bg-gradient-to-br from-indigo-500 to-cyan-500 hidden items-center justify-center">
+              <span class="text-5xl sm:text-6xl font-bold text-white">M</span>
+            </div>
+          </div>
+          {/* Decorative element */}
+          <div class="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-2xl -z-10 opacity-70 dark:opacity-60"></div>
+        </div>
+      </div>
+      
+      {/* Content */}
+      <div class="flex-1 text-center md:text-left">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6" data-i18n="about.headline">
+          Ciao, sono Marco
+        </h2>
+        
+        <div class="space-y-4 text-slate-600 dark:text-slate-200 leading-relaxed mb-8" data-i18n-paragraphs="about.paragraphs">
+          <p data-i18n-item>
+            Sviluppo siti web e sistemi di automazione per piccole imprese che vogliono crescere online senza complicazioni. Dopo anni di esperienza nel settore digitale, ho scelto di specializzarmi in quello che so fare meglio: creare strumenti digitali che funzionano, senza fronzoli inutili.
+          </p>
+          <p data-i18n-item>
+            Credo nella semplicità e nella trasparenza. Non vendo soluzioni complicate — costruisco strumenti che risolvono problemi reali. Il mio approccio è diretto: ascolto, capisco, costruisco. Niente tecnicismi, niente promesse impossibili. Solo risultati concreti.
+          </p>
+          <p data-i18n-item>
+            Sono basato in Ticino e lavoro principalmente con clienti in Svizzera italiana e in tutta la Svizzera. Parlo italiano, tedesco e inglese — e so quanto sia importante comunicare nella lingua del cliente.
+          </p>
+        </div>
+        
+        {/* Skills */}
+        <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+          <span class="px-3 sm:px-4 py-2 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium border border-slate-200 dark:border-slate-600">Web Development</span>
+          <span class="px-3 sm:px-4 py-2 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium border border-slate-200 dark:border-slate-600">AI & Automation</span>
+          <span class="px-3 sm:px-4 py-2 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium border border-slate-200 dark:border-slate-600">Python</span>
+          <span class="px-3 sm:px-4 py-2 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium border border-slate-200 dark:border-slate-600">React</span>
+          <span class="px-3 sm:px-4 py-2 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium border border-slate-200 dark:border-slate-600">n8n</span>
+          <span class="px-3 sm:px-4 py-2 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium border border-slate-200 dark:border-slate-600">FastAPI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Handle paragraph translations
+  function updateParagraphTranslations(translations: Record<string, unknown>) {
+    document.querySelectorAll('[data-i18n-paragraphs]').forEach((container) => {
+      const key = container.getAttribute('data-i18n-paragraphs');
+      if (!key || !translations) return;
+      
+      // Get array from translations using dot notation
+      const value = key.split('.').reduce<unknown>((current, k) => {
+        if (current === null || current === undefined) return undefined;
+        return (current as Record<string, unknown>)[k];
+      }, translations);
+      
+      if (Array.isArray(value)) {
+        const items = container.querySelectorAll('[data-i18n-item]');
+        items.forEach((item, index) => {
+          if (value[index]) {
+            item.textContent = value[index] as string;
+          }
+        });
+      }
+    });
+  }
+  
+  // Listen for i18n events
+  window.addEventListener('i18n:ready', (e: Event) => {
+    const customEvent = e as CustomEvent;
+    if (customEvent.detail?.translations) {
+      updateParagraphTranslations(customEvent.detail.translations);
+    }
+  });
+  
+  window.addEventListener('i18n:languageChanged', (e: Event) => {
+    const customEvent = e as CustomEvent;
+    if (customEvent.detail?.translations) {
+      updateParagraphTranslations(customEvent.detail.translations);
+    }
+  });
+</script>

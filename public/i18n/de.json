@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Marco — Webentwickler & KI-Automatisierung im Tessin",
+    "description": "Ich helfe kleinen Unternehmen, online zu wachsen, mit schnellen Websites und KI-Automatisierungssystemen. Basierend im Tessin, arbeite ich mit Kunden in der ganzen Schweiz."
+  },
+  "nav": {
+    "services": "Dienstleistungen",
+    "work": "Arbeiten",
+    "about": "Über mich",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "label": "Full Stack Entwickler & KI-Automatisierung Engineer",
+    "headline": "Moderne Websites, bereit in Tagen — nicht Monaten",
+    "subheadline": "Ich helfe kleinen Unternehmen und Fachleuten, online zu wachsen, mit schnellen Websites und Systemen, die repetitive Arbeit automatisieren.",
+    "description": "Ich helfe kleinen Unternehmen und Fachleuten, online zu wachsen, mit schnellen Websites und Systemen, die repetitive Arbeit automatisieren. Basierend im Tessin, arbeite ich mit Kunden in der ganzen Schweiz.",
+    "ctaPrimary": "Kontakt aufnehmen",
+    "ctaSecondary": "Arbeiten ansehen",
+    "techStack": "Technologien"
+  },
+  "problems": {
+    "label": "Kommt dir das bekannt vor?",
+    "headline": "Ein Unternehmen zu führen ist schon schwierig genug",
+    "description": "Du solltest dich nicht um deine Website sorgen oder Stunden mit repetitiven Aufgaben verlieren",
+    "cards": {
+      "website": {
+        "title": "Schreckt deine Website Kunden ab?",
+        "description": "Eine veraltete oder nicht mobile-freundliche Website verliert innerhalb weniger Sekunden das Vertrauen. Kunden erwarten Professionalität — und beurteilen diese anhand deiner Website."
+      },
+      "time": {
+        "title": "Verbringst du Stunden mit Aufgaben, die sich selbst erledigen könnten?",
+        "description": "Auf die gleichen E-Mails antworten, Daten manuell eingeben, Termine im Kopf behalten. Diese Tätigkeiten kosten Zeit, die du in dein Geschäftswachstum investieren könntest."
+      },
+      "tech": {
+        "title": "Kommt dir Technologie wie ein Hindernis vor?",
+        "description": "Zu viele Tools, zu viel Komplexität, niemand der es einfach erklärt. Du solltest kein Technikexperte sein, um funktionierende Werkzeuge zu haben."
+      }
+    }
+  },
+  "services": {
+    "label": "Was ich mache",
+    "headline": "Zwei Dienstleistungen. Konkrete Ergebnisse.",
+    "description": "Fokussiert auf das, was für kleine Unternehmen wirklich einen Unterschied macht",
+    "web": {
+      "tag": "Webentwicklung",
+      "title": "Websites, die Besucher in Kunden verwandeln",
+      "description": "Ich baue schnelle, sichere und einfach zu verwaltende Websites. Jedes Projekt ist auf dein Unternehmen ausgerichtet, nicht darauf, andere Entwickler zu beeindrucken.",
+      "features": [
+        "Responsives Design: perfekt auf Telefon, Tablet und Computer",
+        "Optimierte Geschwindigkeit: Ladezeit unter 3 Sekunden",
+        "Basis-SEO: deine Kunden finden dich auf Google",
+        "CMS inklusive: Inhalte selbst aktualisieren"
+      ]
+    },
+    "automation": {
+      "tag": "KI-Automatisierung",
+      "title": "Lass KI die repetitive Arbeit erledigen",
+      "description": "Ich verbinde deine Tools und automatisiere Arbeitsabläufe. Du sparst Zeit, reduzierst Fehler und konzentrierst dich auf das, was wirklich zählt.",
+      "features": [
+        "Tool-Integration: Ich verbinde deine bestehende Software",
+        "Automatisierte Workflows: E-Mails, Follow-ups, Datenverwaltung",
+        "KI-Assistenten: Automatische Antworten für Kunden 24/7",
+        "Automatische Berichte: Wichtige Daten auf einen Blick"
+      ]
+    }
+  },
+  "process": {
+    "label": "Der Prozess",
+    "headline": "Einfach. Schnell. Keine Überraschungen.",
+    "description": "Von der ersten Nachricht bis zum Live-Produkt — so arbeiten wir zusammen",
+    "steps": {
+      "1": {
+        "title": "Kennenlerngespräch",
+        "description": "Wir beginnen mit einem kostenlosen 30-minütigen Gespräch. Du erzählst mir von deinem Unternehmen, deinen Zielen und Problemen. Ich verstehe, was du wirklich brauchst, bevor ich eine Lösung vorschlage."
+      },
+      "2": {
+        "title": "Aufbau und Entwicklung",
+        "description": "Ich halte dich während des gesamten Prozesses auf dem Laufenden. Du erhältst regelmäßige Vorschauen und dein Feedback ist integraler Bestandteil der Arbeit. Keine Überraschungen bei der Lieferung."
+      },
+      "3": {
+        "title": "Launch und Support",
+        "description": "Die Website geht online, alles funktioniert, du bist zufrieden. Aber damit endet es nicht: Ich zeige dir, wie du Inhalte verwaltest, und bleibe für Fragen und kleine Änderungen verfügbar."
+      }
+    }
+  },
+  "projects": {
+    "label": "Meine Arbeiten",
+    "headline": "Aktuelle Projekte",
+    "description": "Konkrete Beispiele von Websites und Automatisierungen für Kunden",
+    "items": {
+      "osteria": {
+        "title": "Osteria Bellavista — Restaurant in Bissone",
+        "description": "Elegante und funktionale Website für ein italienisches Restaurant am Luganersee. Online-Reservierungen, digitale Speisekarte und Social-Media-Integration.",
+        "cta": "Projekt ansehen →"
+      },
+      "crm": {
+        "title": "CRM-Automatisierung",
+        "description": "Automatisierungssystem für Lead-Management und automatische Follow-ups."
+      },
+      "dashboard": {
+        "title": "Analytics Dashboard",
+        "description": "Datenvisualisierung und automatische Berichte für kleine Unternehmen."
+      }
+    },
+    "comingSoon": "Demnächst"
+  },
+  "about": {
+    "headline": "Hallo, ich bin Marco",
+    "paragraphs": [
+      "Ich entwickle Websites und Automatisierungssysteme für kleine Unternehmen, die online wachsen wollen, ohne Komplikationen. Nach Jahren der Erfahrung in der digitalen Branche habe ich mich auf das spezialisiert, was ich am besten kann: digitale Werkzeuge erstellen, die funktionieren, ohne unnötigen Schnickschnack.",
+      "Ich glaube an Einfachheit und Transparenz. Ich verkaufe keine komplizierten Lösungen — ich baue Werkzeuge, die reale Probleme lösen. Mein Ansatz ist direkt: Ich höre zu, verstehe, baue. Keine Fachjargon, keine unmöglichen Versprechen. Nur konkrete Ergebnisse.",
+      "Ich bin im Tessin ansässig und arbeite hauptsächlich mit Kunden in der italienischen Schweiz und in der ganzen Schweiz. Ich spreche Italienisch, Deutsch und Englisch — und weiß, wie wichtig es ist, in der Sprache des Kunden zu kommunizieren."
+    ]
+  },
+  "contact": {
+    "headline": "Bereit, dein Geschäft zu wachsen?",
+    "description": "Schreib mir und ich antworte innerhalb von 24 Stunden. Ein kurzes Gespräch hilft uns zu verstehen, ob ich dir helfen kann.",
+    "form": {
+      "namePlaceholder": "Dein Name",
+      "emailPlaceholder": "Deine E-Mail",
+      "messagePlaceholder": "Erzähl mir von deinem Projekt",
+      "submit": "Nachricht senden →",
+      "sending": "Wird gesendet...",
+      "error": "Fehler — bitte erneut versuchen"
+    },
+    "success": {
+      "title": "Danke!",
+      "message": "Ich habe deine Nachricht erhalten und werde mich so schnell wie möglich bei dir melden."
+    }
+  },
+  "footer": {
+    "copyright": "Mit ❤️ im Tessin gemacht"
+  }
+}

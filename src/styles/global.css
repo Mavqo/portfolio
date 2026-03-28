@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
+
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f8f8fc;
+  --bg-dark: #1a1a2e;
+  --text: #1a1a2e;
+  --text-muted: #666666;
+  --accent: #4a4a8a;
+  --accent-light: #eeeeff;
+  --border: #e5e5f0;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+}
+
+[data-theme="dark"] {
+  --bg: #12121f;
+  --bg-alt: #1c1c32;
+  --bg-dark: #0a0a14;
+  --text: #e4e4f0;
+  --text-muted: #8888aa;
+  --accent: #8080d0;
+  --accent-light: #22224a;
+  --border: #2a2a44;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Typography */
+h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Label style */
+.label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.section-sub {
+  color: var(--text-muted);
+  max-width: 540px;
+  margin: 0.75rem auto 2.5rem;
+}
+
+/* Scroll animations */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.55s ease-out, transform 0.55s ease-out;
+}
+
+[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero entrance animations */
+.hero-text .label,
+.hero-text h1,
+.hero-text .hero-sub,
+.hero-text .hero-btns,
+.hero-photo {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hero-text .label.hero-visible { transition-delay: 0ms; }
+.hero-text h1.hero-visible { transition-delay: 100ms; }
+.hero-text .hero-sub.hero-visible { transition-delay: 200ms; }
+.hero-text .hero-btns.hero-visible { transition-delay: 300ms; }
+.hero-photo.hero-visible { transition-delay: 400ms; }
+
+.hero-text .label.hero-visible,
+.hero-text h1.hero-visible,
+.hero-text .hero-sub.hero-visible,
+.hero-text .hero-btns.hero-visible,
+.hero-photo.hero-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent) 0%, #9090dd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme="dark"] .gradient-text {
+  background: linear-gradient(135deg, #9090e0 0%, #c0c0ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Responsive section padding */
+.section-pad {
+  padding: 4rem 6%;
+}
+
+@media (max-width: 768px) {
+  .section-pad {
+    padding: 3rem 5%;
+  }
+}

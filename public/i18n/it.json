@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Marco — Sviluppatore Web & Automazione AI in Ticino",
+    "description": "Aiuto piccole imprese a crescere online con siti web veloci e sistemi di automazione AI. Basato in Ticino, lavoro con clienti in tutta la Svizzera."
+  },
+  "nav": {
+    "services": "Servizi",
+    "work": "Lavori",
+    "about": "Chi sono",
+    "contact": "Contattami"
+  },
+  "hero": {
+    "label": "Sviluppatore Full Stack & Ingegnere Automazione AI",
+    "headline": "Siti web moderni, pronti in giorni — non mesi",
+    "subheadline": "Aiuto piccole imprese e professionisti a crescere online con siti web veloci e sistemi che automatizzano il lavoro ripetitivo.",
+    "description": "Aiuto piccole imprese e professionisti a crescere online con siti web veloci e sistemi che automatizzano il lavoro ripetitivo. Basato in Ticino, lavoro con clienti in tutta la Svizzera.",
+    "ctaPrimary": "Parliamo del tuo progetto",
+    "ctaSecondary": "Vedi i miei lavori",
+    "techStack": "Tecnologie"
+  },
+  "problems": {
+    "label": "Ti suona familiare?",
+    "headline": "Gestire un'azienda è già abbastanza difficile",
+    "description": "Non dovresti preoccuparti del tuo sito o perdere ore in attività ripetitive",
+    "cards": {
+      "website": {
+        "title": "Il tuo sito web sta allontanando clienti?",
+        "description": "Un sito datato o che non funziona bene sul telefono fa perdere fiducia in pochi secondi. I clienti si aspettano professionalità — e la giudicano dal tuo sito web."
+      },
+      "time": {
+        "title": "Passi ore su compiti che potrebbero fare da soli?",
+        "description": "Rispondere alle stesse email, inserire dati a mano, ricordare appuntamenti. Queste attività consumano tempo che potresti dedicare a far crescere il tuo business."
+      },
+      "tech": {
+        "title": "La tecnologia ti sembra un ostacolo?",
+        "description": "Troppi strumenti, troppa complessità, nessuno che spieghi in modo semplice. Non dovresti essere un esperto di tecnologia per avere strumenti che funzionano."
+      }
+    }
+  },
+  "services": {
+    "label": "Cosa faccio",
+    "headline": "Due servizi. Risultati concreti.",
+    "description": "Focalizzato su ciò che fa davvero la differenza per le piccole imprese",
+    "web": {
+      "tag": "Sviluppo Web",
+      "title": "Siti web che convertono visitatori in clienti",
+      "description": "Costruisco siti veloci, sicuri e facili da gestire. Ogni progetto è pensato per il tuo business, non per impressionare altri sviluppatori.",
+      "features": [
+        "Design responsive: perfetto su telefono, tablet e computer",
+        "Velocità ottimizzata: caricamento in meno di 3 secondi",
+        "SEO di base: i tuoi clienti ti trovano su Google",
+        "CMS incluso: aggiorna contenuti in autonomia"
+      ]
+    },
+    "automation": {
+      "tag": "Automazione AI",
+      "title": "Lascia che l'IA faccia il lavoro ripetitivo",
+      "description": "Connetto i tuoi strumenti e automatizzo i flussi di lavoro. Risparmi tempo, riduci errori e ti concentri su ciò che conta davvero.",
+      "features": [
+        "Integrazione strumenti: collego i tuoi software esistenti",
+        "Workflow automatici: email, follow-up, gestione dati",
+        "Assistenti AI: risposte automatiche ai clienti 24/7",
+        "Report automatici: dati importanti a colpo d'occhio"
+      ]
+    },
+    "consulting": {
+      "tag": "Consulenza",
+      "title": "Strategia tecnologica su misura",
+      "description": "Analisi delle tue esigenze e piano d'azione concreto per digitalizzare il tuo business."
+    },
+    "techstack": {
+      "tag": "Tech Stack",
+      "title": "Tecnologie moderne e affidabili",
+      "description": "Uso solo tecnologie collaudate che garantiscono prestazioni, sicurezza e scalabilità nel tempo."
+    }
+  },
+  "process": {
+    "label": "Il processo",
+    "headline": "Semplice. Veloce. Nessuna sorpresa.",
+    "description": "Dal primo messaggio al prodotto live — ecco come lavoriamo insieme",
+    "steps": {
+      "1": {
+        "title": "Discovery",
+        "description": "Una call per capire il tuo progetto e i tuoi obiettivi. Nessun impegno. Mi parli del tuo business, delle sfide e di cosa vuoi ottenere. Capisco cosa ti serve davvero prima di proporre una soluzione su misura."
+      },
+      "2": {
+        "title": "Costruzione e sviluppo",
+        "description": "Ti tengo aggiornato durante tutto il processo. Ricevi anteprime regolari e il tuo feedback è parte integrante del lavoro. Niente sorprese alla consegna."
+      },
+      "3": {
+        "title": "Lancio e supporto",
+        "description": "Il sito va online, tutto funziona, tu sei felice. Ma non finisce qui: ti mostro come gestire i contenuti e resto disponibile per domande e piccole modifiche."
+      }
+    }
+  },
+  "projects": {
+    "label": "I miei lavori",
+    "headline": "Progetti recenti",
+    "description": "Esempi concreti di siti web e automazioni realizzati per clienti",
+    "items": {
+      "osteria": {
+        "title": "Osteria Bellavista — Progetto dimostrativo",
+        "description": "Progetto dimostrativo di un sito web elegante per un ristorante italiano. Include prenotazioni online, menu digitale e design responsive.",
+        "cta": "Vedi il progetto →"
+      },
+      "crm": {
+        "title": "CRM Automation",
+        "description": "Sistema di automazione per gestione lead e follow-up automatici."
+      },
+      "dashboard": {
+        "title": "Dashboard Analytics",
+        "description": "Visualizzazione dati e report automatici per piccole imprese."
+      }
+    },
+    "comingSoon": "In arrivo"
+  },
+  "about": {
+    "headline": "Ciao, sono Marco",
+    "paragraphs": [
+      "Sviluppo siti web e sistemi di automazione per piccole imprese che vogliono crescere online senza complicazioni. Dopo anni di esperienza nel settore digitale, ho scelto di specializzarmi in quello che so fare meglio: creare strumenti digitali che funzionano, senza fronzoli inutili.",
+      "Credo nella semplicità e nella trasparenza. Non vendo soluzioni complicate — costruisco strumenti che risolvono problemi reali. Il mio approccio è diretto: ascolto, capisco, costruisco. Niente tecnicismi, niente promesse impossibili. Solo risultati concreti.",
+      "Sono basato in Ticino e lavoro principalmente con clienti in Svizzera italiana e in tutta la Svizzera. Parlo italiano, tedesco e inglese — e so quanto sia importante comunicare nella lingua del cliente."
+    ]
+  },
+  "contact": {
+    "headline": "Pronto a far crescere il tuo business?",
+    "description": "Scrivimi e rispondo entro 24 ore. Una breve chiacchierata ci aiuta a capire se posso aiutarti.",
+    "form": {
+      "namePlaceholder": "Il tuo nome",
+      "emailPlaceholder": "La tua email",
+      "messagePlaceholder": "Raccontami del tuo progetto",
+      "submit": "Invia messaggio →",
+      "sending": "Invio...",
+      "error": "Errore — riprova"
+    },
+    "success": {
+      "title": "Grazie!",
+      "message": "Ho ricevuto il tuo messaggio e ti risponderò al più presto."
+    }
+  },
+  "footer": {
+    "copyright": "Fatto con ❤️ in Ticino"
+  }
+}

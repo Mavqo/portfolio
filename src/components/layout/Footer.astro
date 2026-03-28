@@ -1,0 +1,20 @@
+---
+interface Props {
+  currentLang?: string;
+}
+
+const { currentLang = 'it' } = Astro.props;
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-slate-950 border-t border-white/[0.08] text-slate-400 py-6 sm:py-8 px-[6%]">
+  <div class="max-w-[1100px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-center sm:text-left">
+      © {currentYear} Marco · <span data-i18n="footer.copyright">Fatto con ❤️ in Ticino</span>
+    </p>
+    <div class="flex gap-5">
+      {/* Social links temporaneamente rimossi - aggiungere URL reali quando disponibili */}
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,326 @@
+---
+import Button from '@/components/ui/Button.astro';
+---
+
+<section 
+  id="hero" 
+  class="relative min-h-screen flex flex-col justify-center bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 pt-20 pb-16 px-[6%] overflow-hidden"
+>
+  {/* Animated background blobs */}
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div 
+      class="hero-blob hero-blob-1 absolute w-[600px] h-[600px] rounded-full opacity-40 dark:opacity-30"
+      style="background: radial-gradient(circle, rgba(99,102,241,0.5) 0%, transparent 70%); top: -10%; right: -10%;"
+      aria-hidden="true"
+    ></div>
+    <div 
+      class="hero-blob hero-blob-2 absolute w-[400px] h-[400px] rounded-full opacity-30 dark:opacity-25"
+      style="background: radial-gradient(circle, rgba(6,182,212,0.5) 0%, transparent 70%); bottom: 10%; left: -5%;"
+      aria-hidden="true"
+    ></div>
+  </div>
+  
+  <div class="relative z-10 max-w-[1100px] mx-auto w-full">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8">
+      {/* Text content */}
+      <div class="hero-text flex-1 text-center lg:text-left pt-8 lg:pt-0">
+        <p class="hero-fade-in inline-block px-4 py-2 rounded-full bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 text-sm font-semibold tracking-widest uppercase mb-6" data-i18n="hero.label">
+          Full Stack Developer & AI Automation Engineer
+        </p>
+        <h1 class="hero-fade-in hero-fade-in-delay-1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-6 leading-tight" data-i18n="hero.headline">
+          Il tuo sito web <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">moderno</span>, pronto in giorni — non mesi
+        </h1>
+        <p class="hero-fade-in hero-fade-in-delay-2 text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-[540px] mx-auto lg:mx-0 mb-8" data-i18n="hero.subheadline">
+          Aiuto piccole imprese e professionisti a crescere online con siti web veloci e sistemi che automatizzano il lavoro ripetitivo. Basato in Ticino, lavoro con clienti in tutta la Svizzera.
+        </p>
+        <div class="hero-fade-in hero-fade-in-delay-3 hero-btns flex flex-wrap gap-4 justify-center lg:justify-start">
+          <Button href="#contact" variant="primary">
+            <span data-i18n="hero.ctaPrimary">Parliamo del tuo progetto</span> →
+          </Button>
+          <Button href="#work" variant="outline">
+            <span data-i18n="hero.ctaSecondary">Vedi i miei lavori</span> ↓
+          </Button>
+        </div>
+      </div>
+      
+      {/* Hero illustration */}
+      <div class="hero-illustration hero-fade-in hero-fade-in-delay-2 flex-shrink-0 w-full max-w-[500px] lg:max-w-[550px]">
+        <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" aria-label="Illustrazione sviluppo web">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.4" />
+              <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.4" />
+            </linearGradient>
+            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#6366f1" />
+              <stop offset="100%" style="stop-color:#06b6d4" />
+            </linearGradient>
+          </defs>
+          
+          <circle class="hero-circle" cx="250" cy="200" r="150" fill="url(#grad1)" />
+          
+          <rect class="hero-float-slow fill-slate-800 dark:fill-slate-900 stroke-slate-500 dark:stroke-slate-400" x="150" y="120" width="200" height="140" rx="12" stroke-width="2"/>
+          <rect class="hero-float-slow fill-slate-700 dark:fill-slate-800" x="150" y="120" width="200" height="28" rx="12"/>
+          <circle class="hero-float-slow fill-red-400 dark:fill-red-500" cx="170" cy="134" r="4"/>
+          <circle class="hero-float-slow fill-amber-400 dark:fill-amber-500" cx="184" cy="134" r="4"/>
+          <circle class="hero-float-slow fill-green-400 dark:fill-green-500" cx="198" cy="134" r="4"/>
+          
+          <rect class="hero-float-fast fill-indigo-500 dark:fill-indigo-400" x="165" y="165" width="120" height="8" rx="4"/>
+          <rect class="hero-float-fast fill-cyan-500 dark:fill-cyan-400" x="165" y="185" width="80" height="8" rx="4"/>
+          <rect class="hero-float-fast fill-indigo-400 dark:fill-indigo-300" x="165" y="205" width="140" height="8" rx="4"/>
+          <rect class="hero-float-fast fill-green-400 dark:fill-green-300" x="165" y="225" width="100" height="8" rx="4"/>
+          
+          <rect class="hero-rotate" x="380" y="80" width="60" height="60" rx="12" fill="url(#grad2)" opacity="0.3" transform="rotate(15 410 110)"/>
+          <rect class="hero-rotate-reverse" x="60" y="250" width="50" height="50" rx="10" fill="url(#grad2)" opacity="0.2" transform="rotate(-10 85 275)"/>
+          
+          <rect class="hero-float fill-slate-800 dark:fill-slate-900 stroke-indigo-400 dark:stroke-indigo-300" x="360" y="240" width="50" height="40" rx="8" stroke-width="1.5"/>
+          <path class="hero-float" d="M 375 255 L 385 265 L 395 255" stroke="#818cf8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path class="hero-float" d="M 375 265 L 385 275 L 395 265" stroke="#22d3ee" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+          
+          <ellipse class="hero-bob fill-slate-800 dark:fill-slate-900 stroke-cyan-400 dark:stroke-cyan-300" cx="120" cy="200" rx="20" ry="12" stroke-width="1.5"/>
+          <path class="hero-bob stroke-cyan-400 dark:stroke-cyan-300" d="M 100 200 L 100 220 Q 120 232 140 220 L 140 200" stroke-width="1.5" fill="none"/>
+          <path class="hero-bob stroke-cyan-400 dark:stroke-cyan-300" d="M 100 210 Q 120 222 140 210" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+    </div>
+    
+    {/* Tech stack strip */}
+    <div class="mt-12 sm:mt-16 pt-8 border-t border-slate-200 dark:border-slate-700">
+      <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-8">
+        <span class="text-xs font-semibold tracking-widest uppercase text-slate-500 dark:text-slate-400" data-i18n="hero.techStack">Tecnologie</span>
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2 sm:gap-3">
+          {/* React */}
+          <div class="flex items-center gap-2 px-2 sm:px-3 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm hover:border-indigo-300 dark:hover:border-indigo-600 transition-colors">
+            <img src="/assets/logos/react.png" alt="React" class="w-5 h-5 flex-shrink-0 object-contain" />
+            <span class="text-slate-700 dark:text-slate-200">React</span>
+          </div>
+          
+          {/* Python */}
+          <div class="flex items-center gap-2 px-2 sm:px-3 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm hover:border-indigo-300 dark:hover:border-indigo-600 transition-colors">
+            <img src="/assets/logos/python.png" alt="Python" class="w-5 h-5 flex-shrink-0 object-contain" />
+            <span class="text-slate-700 dark:text-slate-200">Python</span>
+          </div>
+          
+          {/* n8n */}
+          <div class="flex items-center gap-2 px-2 sm:px-3 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm hover:border-indigo-300 dark:hover:border-indigo-600 transition-colors">
+            <img src="/assets/logos/n8n.png" alt="n8n" class="w-5 h-5 flex-shrink-0 object-contain" />
+            <span class="text-slate-700 dark:text-slate-200">n8n</span>
+          </div>
+          
+          {/* FastAPI */}
+          <div class="flex items-center gap-2 px-2 sm:px-3 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm hover:border-indigo-300 dark:hover:border-indigo-600 transition-colors">
+            <img src="/assets/logos/fastapi.svg" alt="FastAPI" class="w-5 h-5 flex-shrink-0 object-contain" />
+            <span class="text-slate-700 dark:text-slate-200">FastAPI</span>
+          </div>
+          
+          {/* Next.js */}
+          <div class="flex items-center gap-2 px-2 sm:px-3 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm hover:border-indigo-300 dark:hover:border-indigo-600 transition-colors">
+            <img src="/assets/logos/nextjs.png" alt="Next.js" class="w-5 h-5 flex-shrink-0 object-contain" />
+            <span class="text-slate-700 dark:text-slate-200">Next.js</span>
+          </div>
+          
+          {/* AI/LLM */}
+          <div class="flex items-center gap-2 px-2 sm:px-3 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm hover:border-indigo-300 dark:hover:border-indigo-600 transition-colors">
+            <img src="/assets/logos/ai.png" alt="AI/LLM" class="w-5 h-5 flex-shrink-0 object-contain" />
+            <span class="text-slate-700 dark:text-slate-200">AI/LLM</span>
+          </div>
+          
+          {/* PostgreSQL */}
+          <div class="flex items-center gap-2 px-2 sm:px-3 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm hover:border-indigo-300 dark:hover:border-indigo-600 transition-colors">
+            <img src="/assets/logos/postgresql.png" alt="PostgreSQL" class="w-5 h-5 flex-shrink-0 object-contain" />
+            <span class="text-slate-700 dark:text-slate-200">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Blob pulse animation */
+  @keyframes blob-pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes blob-pulse-2 {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.3;
+    }
+    50% {
+      transform: scale(1.08);
+      opacity: 0.4;
+    }
+  }
+  
+  /* Float animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes float-slow {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+  
+  @keyframes float-fast {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+  }
+  
+  /* Bob animation */
+  @keyframes bob {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  /* Rotate animation */
+  @keyframes rotate-slow {
+    0% {
+      transform: rotate(15deg);
+    }
+    50% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(15deg);
+    }
+  }
+  
+  @keyframes rotate-slow-reverse {
+    0% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  
+  /* Fade in up animation */
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animations */
+  .hero-blob-1 {
+    animation: blob-pulse 4s ease-in-out infinite;
+  }
+  
+  .hero-blob-2 {
+    animation: blob-pulse-2 5s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+  
+  .hero-circle {
+    animation: blob-pulse 6s ease-in-out infinite;
+    transform-origin: center;
+  }
+  
+  .hero-float {
+    animation: float 5s ease-in-out infinite;
+  }
+  
+  .hero-float-slow {
+    animation: float-slow 6s ease-in-out infinite;
+  }
+  
+  .hero-float-fast {
+    animation: float-fast 4s ease-in-out infinite;
+  }
+  
+  .hero-bob {
+    animation: bob 5.5s ease-in-out infinite;
+    animation-delay: 0.5s;
+  }
+  
+  .hero-rotate {
+    animation: rotate-slow 8s ease-in-out infinite;
+    transform-origin: 410px 110px;
+  }
+  
+  .hero-rotate-reverse {
+    animation: rotate-slow-reverse 7s ease-in-out infinite;
+    transform-origin: 85px 275px;
+  }
+  
+  /* Staggered fade-in for text elements */
+  .hero-fade-in {
+    opacity: 0;
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+  
+  .hero-fade-in-delay-1 {
+    animation-delay: 0.1s;
+  }
+  
+  .hero-fade-in-delay-2 {
+    animation-delay: 0.25s;
+  }
+  
+  .hero-fade-in-delay-3 {
+    animation-delay: 0.4s;
+  }
+  
+  /* Dark mode adjustments */
+  :global([data-theme="dark"]) .hero-blob-1 {
+    opacity: 0.3;
+  }
+  
+  :global([data-theme="dark"]) .hero-blob-2 {
+    opacity: 0.25;
+  }
+  
+  /* Reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-blob-1,
+    .hero-blob-2,
+    .hero-circle,
+    .hero-float,
+    .hero-float-slow,
+    .hero-float-fast,
+    .hero-bob,
+    .hero-rotate,
+    .hero-rotate-reverse {
+      animation: none;
+    }
+    
+    .hero-fade-in {
+      opacity: 1;
+      animation: none;
+    }
+  }
+</style>

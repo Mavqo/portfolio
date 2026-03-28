@@ -1,0 +1,351 @@
+---
+import '@/styles/global.css';
+import Navigation from '@/components/layout/Navigation.astro';
+import Footer from '@/components/layout/Footer.astro';
+import ScrollProgress from '@/components/layout/ScrollProgress.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang?: string;
+}
+
+const { 
+  title = 'Marco — Sviluppatore Web & Automazione AI',
+  description = 'Aiuto piccole imprese a crescere online con siti web veloci e sistemi di automazione AI. Basato in Ticino, lavoro con clienti in tutta la Svizzera.',
+  lang = 'it'
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://marco.dev');
+---
+
+<!DOCTYPE html>
+<html lang={lang} data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <meta name="generator" content={Astro.generator} />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href={canonicalURL} />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalURL} />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  
+  <title>{title}</title>
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <!-- Theme initialization script -->
+  <script is:inline>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  
+  <!-- i18n Global Script -->
+  <script is:inline>
+    /**
+     * i18n Global System
+     * Client-side translation management
+     */
+    (function() {
+      'use strict';
+      
+      // Configuration
+      const DEFAULT_LANGUAGE = 'it';
+      const SUPPORTED_LANGUAGES = ['it', 'en'];
+      const LANGUAGE_STORAGE_KEY = 'language';
+      
+      // Translation cache
+      const translationCache = {};
+      
+      // Current translations
+      let currentTranslations = null;
+      let currentLanguage = DEFAULT_LANGUAGE;
+      
+      // Track initialization state
+      let isI18nReady = false;
+      
+      /**
+       * Get stored language from localStorage
+       */
+      function getStoredLanguage() {
+        const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+        if (stored && SUPPORTED_LANGUAGES.includes(stored)) {
+          return stored;
+        }
+        
+        // Try to detect from browser
+        const browserLang = navigator.language.slice(0, 2);
+        if (SUPPORTED_LANGUAGES.includes(browserLang)) {
+          return browserLang;
+        }
+        
+        return DEFAULT_LANGUAGE;
+      }
+      
+      /**
+       * Store language preference
+       */
+      function setStoredLanguage(lang) {
+        localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+      }
+      
+      /**
+       * Get nested value from object using dot notation
+       */
+      function getNestedValue(obj, path) {
+        return path.split('.').reduce(function(current, key) {
+          if (current === null || current === undefined) return undefined;
+          return current[key];
+        }, obj);
+      }
+      
+      /**
+       * Translate a key using dot notation
+       */
+      function t(key, fallback) {
+        if (!currentTranslations) {
+          return fallback || key;
+        }
+        
+        const value = getNestedValue(currentTranslations, key);
+        
+        if (typeof value === 'string') {
+          return value;
+        }
+        
+        return fallback || key;
+      }
+      
+      /**
+       * Load translations for a language
+       */
+      async function loadTranslations(lang) {
+        // Return from cache if available
+        if (translationCache[lang]) {
+          return translationCache[lang];
+        }
+        
+        try {
+          const response = await fetch('/i18n/' + lang + '.json');
+          if (!response.ok) {
+            throw new Error('Failed to load translations for ' + lang);
+          }
+          const data = await response.json();
+          translationCache[lang] = data;
+          return data;
+        } catch (error) {
+          console.warn('Failed to load translations for ' + lang + ', falling back to ' + DEFAULT_LANGUAGE);
+          
+          // Try to load default language
+          if (lang !== DEFAULT_LANGUAGE) {
+            return loadTranslations(DEFAULT_LANGUAGE);
+          }
+          
+          throw error;
+        }
+      }
+      
+      /**
+       * Apply translations to all elements with data-i18n attributes
+       */
+      function applyTranslations(translations) {
+        currentTranslations = translations;
+        
+        // Update HTML lang attribute
+        document.documentElement.setAttribute('lang', currentLanguage);
+        
+        // Apply text content translations with fade effect
+        document.querySelectorAll('[data-i18n]').forEach(function(el) {
+          const key = el.getAttribute('data-i18n');
+          if (key) {
+            const translated = t(key);
+            if (translated !== key) {
+              // Add fade out effect
+              el.style.opacity = '0';
+              el.style.transition = 'opacity 0.15s ease';
+              
+              setTimeout(function() {
+                el.textContent = translated;
+                // Fade in
+                el.style.opacity = '1';
+              }, 150);
+            }
+          }
+        });
+        
+        // Apply placeholder translations
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+          const key = el.getAttribute('data-i18n-placeholder');
+          if (key) {
+            const translated = t(key);
+            if (translated !== key) {
+              el.placeholder = translated;
+            }
+          }
+        });
+        
+        // Apply aria-label translations
+        document.querySelectorAll('[data-i18n-aria]').forEach(function(el) {
+          const key = el.getAttribute('data-i18n-aria');
+          if (key) {
+            const translated = t(key);
+            if (translated !== key) {
+              el.setAttribute('aria-label', translated);
+            }
+          }
+        });
+        
+        // Update meta tags
+        updateMetaTags(translations);
+      }
+      
+      /**
+       * Update meta tags based on translations
+       */
+      function updateMetaTags(translations) {
+        if (!translations || !translations.meta) return;
+        
+        const title = translations.meta.title;
+        const description = translations.meta.description;
+        
+        if (title) {
+          document.title = title;
+          const ogTitle = document.querySelector('meta[property="og:title"]');
+          const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', title);
+          if (twitterTitle) twitterTitle.setAttribute('content', title);
+        }
+        
+        if (description) {
+          const metaDesc = document.querySelector('meta[name="description"]');
+          const ogDesc = document.querySelector('meta[property="og:description"]');
+          const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+          if (metaDesc) metaDesc.setAttribute('content', description);
+          if (ogDesc) ogDesc.setAttribute('content', description);
+          if (twitterDesc) twitterDesc.setAttribute('content', description);
+        }
+      }
+      
+      /**
+       * Change language and reapply translations
+       */
+      async function changeLanguage(lang) {
+        if (!SUPPORTED_LANGUAGES.includes(lang)) {
+          console.error('Unsupported language: ' + lang);
+          return;
+        }
+        
+        currentLanguage = lang;
+        setStoredLanguage(lang);
+        
+        const translations = await loadTranslations(lang);
+        applyTranslations(translations);
+        
+        // Dispatch event
+        window.dispatchEvent(new CustomEvent('i18n:languageChanged', { 
+          detail: { lang: lang, translations: translations } 
+        }));
+      }
+      
+      /**
+       * Initialize i18n on page load
+       */
+      async function initI18n() {
+        currentLanguage = getStoredLanguage();
+        
+        try {
+          const translations = await loadTranslations(currentLanguage);
+          applyTranslations(translations);
+          isI18nReady = true;
+          
+          // Dispatch ready event
+          window.dispatchEvent(new CustomEvent('i18n:ready', { 
+            detail: { lang: currentLanguage, translations: translations } 
+          }));
+        } catch (error) {
+          console.error('Failed to initialize i18n:', error);
+          isI18nReady = false;
+        }
+      }
+      
+      // Expose API globally
+      window.i18n = {
+        t: t,
+        changeLanguage: changeLanguage,
+        getLanguage: function() { return currentLanguage; },
+        get translations() { return currentTranslations; },
+        isReady: function() { return isI18nReady; }
+      };
+      
+      // Initialize when DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initI18n);
+      } else {
+        initI18n();
+      }
+    })();
+  </script>
+</head>
+<body class="bg-background text-foreground antialiased">
+  <ScrollProgress />
+  <Navigation currentLang={lang} />
+  
+  <main>
+    <slot />
+  </main>
+  
+  <Footer currentLang={lang} />
+  
+  <!-- Scroll animations script -->
+  <script>
+    // Intersection Observer for scroll animations
+    const observerCallback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+    
+    const observer = new IntersectionObserver(observerCallback, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+    
+    document.querySelectorAll('[data-animate]').forEach((el) => {
+      observer.observe(el);
+    });
+    
+    // Hero entrance animation
+    document.addEventListener('DOMContentLoaded', () => {
+      const heroElements = document.querySelectorAll('.hero-text .label, .hero-text h1, .hero-text .hero-sub, .hero-text .hero-btns, .hero-photo');
+      heroElements.forEach((el, index) => {
+        setTimeout(() => {
+          el.classList.add('hero-visible');
+        }, index * 100);
+      });
+    });
+  </script>
+</body>
+</html>

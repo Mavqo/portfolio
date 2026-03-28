@@ -1,0 +1,27 @@
+---
+// Scroll progress bar component
+---
+
+<div 
+  id="progress-bar" 
+  class="fixed top-0 left-0 h-[3px] bg-accent z-[200] transition-[width] duration-100"
+  style="width: 0%"
+  aria-hidden="true"
+></div>
+
+<script>
+  const progressBar = document.getElementById('progress-bar');
+  
+  function updateProgress() {
+    if (!progressBar) return;
+    
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    
+    progressBar.style.width = `${Math.min(progress, 100)}%`;
+  }
+  
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+</script>

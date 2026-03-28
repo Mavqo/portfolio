@@ -1,0 +1,99 @@
+---
+---
+
+<section id="work" class="py-20 px-[6%] bg-slate-50 dark:bg-slate-900/50">
+  <div class="max-w-[1100px] mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-sm font-semibold tracking-widest uppercase text-indigo-600 dark:text-indigo-400 mb-3" data-i18n="projects.label">
+        I miei lavori
+      </p>
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4" data-i18n="projects.headline">
+        Progetti recenti
+      </h2>
+      <p class="text-lg text-slate-600 dark:text-slate-400 max-w-[600px] mx-auto" data-i18n="projects.description">
+        Esempi concreti di siti web e automazioni realizzati per clienti
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Osteria Bellavista */}
+      <div class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all duration-300">
+        <div class="h-48 bg-slate-100 dark:bg-slate-900 p-3">
+          {/* Screenshot reale con frame browser */}
+          <div class="relative bg-slate-900 rounded-t-lg h-full overflow-hidden">
+            {/* Browser chrome */}
+            <div class="flex gap-1.5 px-3 py-2 border-b border-slate-700">
+              <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+              <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+              <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+            </div>
+            {/* Screenshot reale */}
+            <div class="h-[calc(100%-28px)] overflow-hidden">
+              <img 
+                src="/assets/osteria-real.png" 
+                alt="Osteria Bellavista website" 
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+        </div>
+        
+        <div class="p-6">
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2 py-1 text-xs font-medium bg-amber-100 dark:bg-amber-900/50 text-amber-700 dark:text-amber-300 rounded">Progetto dimostrativo</span>
+            <span class="px-2 py-1 text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded">Web App</span>
+            <span class="px-2 py-1 text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded">React</span>
+          </div>
+          
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2" data-i18n="projects.items.osteria.title">
+            Osteria Bellavista — Ristorante a Bissone
+          </h3>
+          
+          <p class="text-slate-600 dark:text-slate-400 text-sm mb-4" data-i18n="projects.items.osteria.description">
+            Sito web elegante e funzionale per un ristorante italiano sul Lago di Lugano. Prenotazioni online, menu digitale e integrazione con i social.
+          </p>
+          
+          <a 
+            href="http://localhost:3000"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:gap-3 transition-all"
+            data-i18n="projects.items.osteria.cta"
+          >
+            Vedi il progetto →
+          </a>
+        </div>
+      </div>
+      
+      {/* Placeholder 1 */}
+      <div class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 opacity-60 dark:opacity-80 hover:shadow-xl transition-all duration-300">
+        <div class="h-48 flex items-center justify-center bg-slate-100 dark:bg-slate-700">
+          <span class="text-slate-400 dark:text-slate-300 font-medium" data-i18n="projects.comingSoon">In arrivo</span>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2" data-i18n="projects.items.crm.title">
+            CRM Automation
+          </h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm" data-i18n="projects.items.crm.description">
+            Sistema di automazione per gestione lead e follow-up automatici.
+          </p>
+        </div>
+      </div>
+      
+      {/* Placeholder 2 */}
+      <div class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 opacity-60 dark:opacity-80 hover:shadow-xl transition-all duration-300">
+        <div class="h-48 flex items-center justify-center bg-slate-100 dark:bg-slate-700">
+          <span class="text-slate-400 dark:text-slate-300 font-medium" data-i18n="projects.comingSoon">In arrivo</span>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2" data-i18n="projects.items.dashboard.title">
+            Dashboard Analytics
+          </h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm" data-i18n="projects.items.dashboard.description">
+            Visualizzazione dati e report automatici per piccole imprese.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
