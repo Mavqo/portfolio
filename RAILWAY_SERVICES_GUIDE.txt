@@ -1,0 +1,41 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║           🚂 GUIDA RINOMINA SERVIZI RAILWAY - PROGETTO vibrant-flexibility   ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📋 SITUAZIONE ATTUALE:
+
+   Nome attuale        →    Nome consigliato
+   ─────────────────────────────────────────────
+   1. "portfolio"       →    "marco-portfolio"
+   2. "Leadspark"       →    "leadspark-landing"  
+   3. "chic-elegance"   →    "osteria-bellavista"
+
+🔗 LINK DIRETTO ALLA DASHBOARD:
+   https://railway.app/project/c053fe52-8f75-4f64-9ffe-0025d6843f71
+
+📝 ISTRUZIONI PER RINOMINARE:
+
+   1. Apri il link sopra nel browser
+   2. Clicca sul servizio che vuoi rinominare
+   3. In alto a destra clicca sull'icona ⚙️ (Settings)
+   4. Cambia il campo "Name" con il nuovo nome
+   5. Clicca "Save"
+
+🌐 URL FINALI DEI PROGETTI:
+
+   ┌─────────────────────────────────────────────────────────────────────┐
+   │  🎨 Portfolio (Sito personale)                                      │
+   │     https://portfolio-production-fddb.up.railway.app               │
+   ├─────────────────────────────────────────────────────────────────────┤
+   │  🚀 LeadSpark (Landing page fisioterapia)                          │
+   │     https://leadspark-production.up.railway.app                    │
+   ├─────────────────────────────────────────────────────────────────────┤
+   │  🍽️  Osteria Bellavista (Ristorante)                                │
+   │     https://chic-elegance-production-0acd.up.railway.app           │
+   └─────────────────────────────────────────────────────────────────────┘
+
+💡 CONSIGLI:
+   - Usa nomi minuscoli con trattini (-)
+   - Evita spazi e caratteri speciali
+   - Includi il tipo di progetto nel nome
+
