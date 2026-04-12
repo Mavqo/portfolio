@@ -108,10 +108,11 @@
   "about": {
     "headline": "Hi, I'm Marco",
     "paragraphs": [
-      "I develop websites and automation systems for small businesses that want to grow online without complications. After years of experience in the digital industry, I've chosen to specialize in what I do best: creating digital tools that work, without unnecessary frills.",
-      "I believe in simplicity and transparency. I don't sell complicated solutions — I build tools that solve real problems. My approach is direct: I listen, understand, build. No jargon, no impossible promises. Just concrete results.",
-      "I'm based in Ticino and work primarily with clients in Italian Switzerland and across Switzerland. I speak Italian, German, and English — and I know how important it is to communicate in the client's language."
-    ]
+      "I build websites and automation systems for small businesses in Ticino. I started working with local clients — tradespeople, professional studios, shops — who needed practical digital tools, not over-engineered solutions.",
+      "Over time I developed a precise working method: I understand the real problem before proposing any solution, I deliver on agreed timelines, and I explain every decision in plain language. No intermediaries, no agency structure — you work directly with me.",
+      "I am based in Ticino and work with clients across Switzerland. I speak Italian, German, and English."
+    ],
+    "experience": "3 years of digital experience"
   },
   "contact": {
     "headline": "Ready to grow your business?",
