@@ -88,17 +88,25 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://marco.de
        * Get stored language from localStorage
        */
       function getStoredLanguage() {
+        // Priority 1: URL path (e.g. /en or /en/... → 'en')
+        const pathLang = window.location.pathname.split('/')[1];
+        if (SUPPORTED_LANGUAGES.includes(pathLang)) {
+          setStoredLanguage(pathLang);
+          return pathLang;
+        }
+
+        // Priority 2: localStorage
         const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
         if (stored && SUPPORTED_LANGUAGES.includes(stored)) {
           return stored;
         }
-        
-        // Try to detect from browser
+
+        // Priority 3: Browser language
         const browserLang = navigator.language.slice(0, 2);
         if (SUPPORTED_LANGUAGES.includes(browserLang)) {
           return browserLang;
         }
-        
+
         return DEFAULT_LANGUAGE;
       }
       
