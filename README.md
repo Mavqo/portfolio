@@ -1,43 +1,73 @@
-# Astro Starter Kit: Minimal
+# Marco Digital Agency — Portfolio
 
-```sh
-npm create astro@latest -- --template minimal
+> Freelance portfolio site for web development, AI automation, and digital operations.
+
+Live site: [https://mavqo.dev](https://mavqo.dev)
+
+---
+
+## Overview
+
+This is the main public-facing portfolio for Marco Digital Agency. It presents services, selected projects, the work process, client testimonials, and a contact funnel. The site is built as a fast, static-first Astro application with smooth interactions and a clean Tailwind CSS design system.
+
+## Features
+
+- **Bilingual pages** — Italian and English entry points
+- **Section-based landing** — Hero, About, Services, Projects, Process, Problems, Testimonials, Contact
+- **Responsive design** — Mobile-first Tailwind CSS layout
+- **Smooth interactions** — Framer Motion animations
+- **Static-first architecture** — Fast builds, easy hosting, SEO-friendly
+
+## Tech Stack
+
+- [Astro](https://astro.build/) 4.15
+- [Tailwind CSS](https://tailwindcss.com/) 3.4
+- [Framer Motion](https://www.framer.com/motion/) 11
+- [Lucide React](https://lucide.dev/) icons
+- Node.js >= 22.12.0
+
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build locally
+npm run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Deployment
 
-## 🚀 Project Structure
+The site is containerized with Docker and deployed via **Railway** and **Coolify**.
 
-Inside of your Astro project, you'll see the following folders and files:
+- `Dockerfile` — multi-stage build with nginx serving the `dist/` folder
+- `railway.toml` — Railway deploy configuration
+- `docker-compose.yaml` — local Docker orchestration
+
+## Project Structure
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+src/
+├── components/
+│   ├── layout/       # Navigation, Footer, ScrollProgress
+│   ├── sections/     # Page sections (Hero, About, Services, etc.)
+│   └── ui/           # Reusable UI primitives (Button, Card, Input, Tag)
+├── layouts/          # Astro page layouts
+├── pages/            # Routes (IT + EN)
+├── i18n/             # Internationalization helpers
+├── lib/              # Utilities
+└── styles/           # Global styles
+public/               # Static assets
+docs/                 # Copy, wireframes, and design system docs
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Notes
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- `docs/` contains copy documents, wireframes, and the design system spec for the site.
+- Do not commit `.tmp` build artifacts or local agent context files to version control.
