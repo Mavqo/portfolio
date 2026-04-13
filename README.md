@@ -1,6 +1,6 @@
 # Marco Digital Agency — Portfolio
 
-> Freelance portfolio site for web development, AI automation, and digital operations.
+> Freelance portfolio site for web development, automation, and digital operations.
 
 Live site: [https://mavqo.dev](https://mavqo.dev)
 
