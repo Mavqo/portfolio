@@ -13,7 +13,7 @@ interface Props {
 const { 
   title = 'Marco — Sviluppatore Web & Automazione AI',
   description = 'Aiuto piccole imprese a crescere online con siti web veloci e sistemi di automazione AI. Basato in Ticino, lavoro con clienti in tutta la Svizzera.',
-  lang = 'it'
+  lang = 'en'
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://marco.dev');
@@ -70,7 +70,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://marco.de
       'use strict';
       
       // Configuration
-      const DEFAULT_LANGUAGE = 'it';
+      const DEFAULT_LANGUAGE = 'en';
       const SUPPORTED_LANGUAGES = ['it', 'en'];
       const LANGUAGE_STORAGE_KEY = 'language';
       

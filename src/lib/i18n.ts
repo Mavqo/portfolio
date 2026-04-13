@@ -12,7 +12,7 @@
 
 export type Language = 'it' | 'de' | 'en';
 
-export const DEFAULT_LANGUAGE: Language = 'it';
+export const DEFAULT_LANGUAGE: Language = 'en';
 export const SUPPORTED_LANGUAGES: Language[] = ['it', 'en'];
 
 // Translation data structure
