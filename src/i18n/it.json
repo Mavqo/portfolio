@@ -40,7 +40,7 @@
   },
   "services": {
     "label": "Cosa faccio",
-    "headline": "Due servizi. Risultati concreti.",
+    "headline": "Tre servizi. Risultati concreti.",
     "description": "Focalizzato su ciò che fa davvero la differenza per le piccole imprese",
     "web": {
       "tag": "Sviluppo Web",
@@ -63,6 +63,11 @@
         "Assistenti AI: risposte automatiche ai clienti 24/7",
         "Report automatici: dati importanti a colpo d'occhio"
       ]
+    },
+    "ios": {
+      "tag": "App iOS Native",
+      "title": "App iPhone su misura, che funzionano davvero",
+      "description": "Costruiamo app native per iPhone con SwiftUI — dalla UI curata alla fotocamera, geolocalizzazione e generazione PDF on-device. Che tu abbia bisogno di un prodotto iOS standalone o di un'app mobile a supporto di una piattaforma esistente, progettiamo e rilasciamo app che si sentono giuste sul dispositivo."
     }
   },
   "process": {
@@ -101,6 +106,13 @@
       "dashboard": {
         "title": "Dashboard Analytics",
         "description": "Visualizzazione dati e report automatici per piccole imprese."
+      },
+      "jobsite": {
+        "tag": "Capability Demo",
+        "title": "Job Site Checklist + Photo Log",
+        "subtitle": "Demo iOS nativa per imprenditori artigiani che hanno bisogno di registri puliti, veloci.",
+        "description": "Lista cantieri giornaliera, checklist per progetto con photo timeline, scatto con geotag, condivisione PDF con un tap. Per elettricisti, HVAC, idraulici — 1–5 addetti.",
+        "cta": "Vedi su GitHub →"
       }
     },
     "comingSoon": "In arrivo"

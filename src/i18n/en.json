@@ -40,7 +40,7 @@
   },
   "services": {
     "label": "What I do",
-    "headline": "Two services. Concrete results.",
+    "headline": "Three services. Concrete results.",
     "description": "Focused on what really makes a difference for small businesses",
     "web": {
       "tag": "Web Development",
@@ -63,6 +63,11 @@
         "AI assistants: automatic responses to customers 24/7",
         "Automatic reports: important data at a glance"
       ]
+    },
+    "ios": {
+      "tag": "Native iOS Apps",
+      "title": "Native iPhone apps that actually work",
+      "description": "We build native iPhone apps with SwiftUI — from polished UI to on-device camera, location, and PDF generation. Whether you need a standalone iOS product or a mobile companion to an existing platform, we design and ship apps that feel right on the device."
     }
   },
   "process": {
@@ -101,6 +106,13 @@
       "dashboard": {
         "title": "Analytics Dashboard",
         "description": "Data visualization and automatic reports for small businesses."
+      },
+      "jobsite": {
+        "tag": "Capability Demo",
+        "title": "Job Site Checklist + Photo Log",
+        "subtitle": "A native iOS capability demo for trade contractors who need clean records, fast.",
+        "description": "Today list, job-detail checklist with photo timeline, geo-stamped camera capture, one-tap PDF share. Built for electricians, HVAC, plumbing — 1–5 crew.",
+        "cta": "View on GitHub →"
       }
     },
     "comingSoon": "Coming soon"
