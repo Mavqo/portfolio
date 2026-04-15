@@ -1,73 +1,34 @@
 # Portfolio
 
-> Freelance portfolio site for web development, automation, and digital operations.
+Freelance portfolio site. Italian and English. Services, projects, process, testimonials, contact form.
 
-Live site: [https://mavqo.dev](https://mavqo.dev)
+Live: [mavqo.dev](https://mavqo.dev)
 
----
+Built with Astro 4.15, Tailwind CSS 3.4, Framer Motion, React. Node >= 22.12.
 
-## Overview
-
-Public-facing freelance portfolio presenting services, selected projects, work process, client testimonials, and a contact funnel. Built as a fast, static-first Astro application with smooth interactions and a clean Tailwind CSS design system.
-
-## Features
-
-- **Bilingual pages** — Italian and English entry points
-- **Section-based landing** — Hero, About, Services, Projects, Process, Problems, Testimonials, Contact
-- **Responsive design** — Mobile-first Tailwind CSS layout
-- **Smooth interactions** — Framer Motion animations
-- **Static-first architecture** — Fast builds, easy hosting, SEO-friendly
-
-## Tech Stack
-
-- [Astro](https://astro.build/) 4.15
-- [Tailwind CSS](https://tailwindcss.com/) 3.4
-- [Framer Motion](https://www.framer.com/motion/) 11
-- [Lucide React](https://lucide.dev/) icons
-- Node.js >= 22.12.0
-
-## Local Development
+## Run locally
 
 ```bash
-# Install dependencies
-npm install
-
-# Start dev server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build locally
-npm run preview
+npm install && npm run dev
 ```
 
-## Deployment
+Build: `npm run build`
 
-The site is containerized with Docker and deployed via **Railway** and **Coolify**.
+Deployed with Docker via Coolify. See `Dockerfile` and `docker-compose.yaml`.
 
-- `Dockerfile` — multi-stage build with nginx serving the `dist/` folder
-- `railway.toml` — Railway deploy configuration
-- `docker-compose.yaml` — local Docker orchestration
+## Structure
 
-## Project Structure
-
-```text
+```
 src/
 ├── components/
-│   ├── layout/       # Navigation, Footer, ScrollProgress
-│   ├── sections/     # Page sections (Hero, About, Services, etc.)
-│   └── ui/           # Reusable UI primitives (Button, Card, Input, Tag)
+│   ├── layout/       # Nav, Footer, ScrollProgress
+│   ├── sections/     # Hero, About, Services, Projects, etc.
+│   └── ui/           # Button, Card, Input, Tag
 ├── layouts/          # Astro page layouts
 ├── pages/            # Routes (IT + EN)
-├── i18n/             # Internationalization helpers
+├── i18n/             # Translation files
 ├── lib/              # Utilities
 └── styles/           # Global styles
 public/               # Static assets
-docs/                 # Copy, wireframes, and design system docs
+docs/                 # Copy docs, wireframes, design system
 ```
-
-## Notes
-
-- `docs/` contains copy documents, wireframes, and the design system spec for the site.
-- Do not commit `.tmp` build artifacts or local agent context files to version control.
