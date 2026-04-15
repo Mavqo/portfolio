@@ -67,7 +67,7 @@
     "ios": {
       "tag": "Native iOS Apps",
       "title": "Native iPhone apps that actually work",
-      "description": "We build native iPhone apps with SwiftUI — from polished UI to on-device camera, location, and PDF generation. Whether you need a standalone iOS product or a mobile companion to an existing platform, we design and ship apps that feel right on the device."
+      "description": "I design and build iPhone apps that fit your business. From the first sketch to the App Store, I handle the entire process so you can reach your customers on mobile."
     }
   },
   "process": {
@@ -101,11 +101,13 @@
       },
       "crm": {
         "title": "CRM Automation",
-        "description": "Automation system for lead management and automatic follow-ups."
+        "description": "n8n workflow: a form submission triggers lead scoring, a Slack alert, and a 3-step email sequence — no CRM subscription needed.",
+        "cta": "View demo →"
       },
       "dashboard": {
         "title": "Analytics Dashboard",
-        "description": "Data visualization and automatic reports for small businesses."
+        "description": "Python + Plotly dashboard tracking revenue, churn, and pipeline across multiple clients. Auto-exports a weekly PDF snapshot for review.",
+        "cta": "View demo →"
       },
       "jobsite": {
         "tag": "Capability Demo",

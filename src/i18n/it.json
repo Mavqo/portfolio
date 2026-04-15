@@ -67,7 +67,7 @@
     "ios": {
       "tag": "App iOS Native",
       "title": "App iPhone su misura, che funzionano davvero",
-      "description": "Costruiamo app native per iPhone con SwiftUI — dalla UI curata alla fotocamera, geolocalizzazione e generazione PDF on-device. Che tu abbia bisogno di un prodotto iOS standalone o di un'app mobile a supporto di una piattaforma esistente, progettiamo e rilasciamo app che si sentono giuste sul dispositivo."
+      "description": "Progetto e realizzo app per iPhone su misura per il tuo business. Dalla prima bozza all’App Store, gestisco tutto il processo così puoi arrivare direttamente ai tuoi clienti da mobile."
     }
   },
   "process": {
@@ -101,11 +101,13 @@
       },
       "crm": {
         "title": "CRM Automation",
-        "description": "Sistema di automazione per gestione lead e follow-up automatici."
+        "description": "Workflow n8n: l’invio di un form attiva scoring lead, alert Slack e una sequenza email in 3 step. Nessun abbonamento CRM necessario.",
+        "cta": "Vedi demo →"
       },
       "dashboard": {
         "title": "Dashboard Analytics",
-        "description": "Visualizzazione dati e report automatici per piccole imprese."
+        "description": "Dashboard Python + Plotly per tracciare revenue, churn e pipeline su più clienti. Snapshot settimanale con esportazione PDF automatica.",
+        "cta": "Vedi demo →"
       },
       "jobsite": {
         "tag": "Capability Demo",
