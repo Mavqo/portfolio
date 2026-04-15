@@ -1,4 +1,4 @@
-# Marco Digital Agency — Portfolio
+# Portfolio
 
 > Freelance portfolio site for web development, automation, and digital operations.
 
@@ -8,7 +8,7 @@ Live site: [https://mavqo.dev](https://mavqo.dev)
 
 ## Overview
 
-This is the main public-facing portfolio for Marco Digital Agency. It presents services, selected projects, the work process, client testimonials, and a contact funnel. The site is built as a fast, static-first Astro application with smooth interactions and a clean Tailwind CSS design system.
+Public-facing freelance portfolio presenting services, selected projects, work process, client testimonials, and a contact funnel. Built as a fast, static-first Astro application with smooth interactions and a clean Tailwind CSS design system.
 
 ## Features
 
