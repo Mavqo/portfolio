@@ -62,11 +62,16 @@
         "KI-Assistenten: Automatische Antworten für Kunden 24/7",
         "Automatische Berichte: Wichtige Daten auf einen Blick"
       ]
+    },
+    "ios": {
+      "tag": "Native iOS App",
+      "title": "Maßgeschneiderte iPhone-Apps, die wirklich funktionieren",
+      "description": "Ich baue native iPhone-Apps mit SwiftUI — von der sorgfältigen UI bis zu Kamera, Geolokalisierung und PDF-Generierung."
     }
   },
   "process": {
     "label": "Der Prozess",
-    "headline": "Einfach. Schnell. Keine Überraschungen.",
+    "headline": "Ein klarer Prozess. Keine Überraschungen.",
     "description": "Von der ersten Nachricht bis zum Live-Produkt — so arbeiten wir zusammen",
     "steps": {
       "1": {
@@ -100,6 +105,12 @@
       "dashboard": {
         "title": "Analytics Dashboard",
         "description": "Datenvisualisierung und automatische Berichte für kleine Unternehmen."
+      },
+      "jobsite": {
+        "tag": "Demo-Projekt",
+        "title": "Baustellen-Checkliste + Fotoprotokoll",
+        "description": "Tagesliste, Detailcheckliste mit Fotoverlauf, geogestempeltes Kamerabild und PDF-Teilen mit einem Tap.",
+        "cta": "Auf GitHub ansehen →"
       }
     },
     "comingSoon": "Demnächst"
@@ -113,7 +124,7 @@
     ]
   },
   "contact": {
-    "headline": "Bereit, dein Geschäft zu wachsen?",
+    "headline": "Schreib mir — lass uns über dein Projekt reden",
     "description": "Schreib mir und ich antworte innerhalb von 24 Stunden. Ein kurzes Gespräch hilft uns zu verstehen, ob ich dir helfen kann.",
     "form": {
       "namePlaceholder": "Dein Name",

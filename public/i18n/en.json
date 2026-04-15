@@ -72,11 +72,16 @@
       "tag": "Tech Stack",
       "title": "Modern and reliable technologies",
       "description": "I only use proven technologies that guarantee performance, security, and scalability over time."
+    },
+    "ios": {
+      "tag": "Native iOS App",
+      "title": "Custom iPhone apps that actually work",
+      "description": "I build native iPhone apps with SwiftUI — from polished UI to camera, geolocation, and on-device PDF generation."
     }
   },
   "process": {
     "label": "The process",
-    "headline": "Simple. Fast. No surprises.",
+    "headline": "A clear process. No surprises.",
     "description": "From first message to live product — here's how we work together",
     "steps": {
       "1": {
@@ -105,11 +110,20 @@
       },
       "crm": {
         "title": "CRM Automation",
-        "description": "Automation system for lead management and automatic follow-ups."
+        "description": "n8n workflow: a form submission triggers lead scoring, a Slack alert, and a 3-step email sequence — no CRM subscription needed.",
+        "cta": "View demo →"
       },
       "dashboard": {
         "title": "Analytics Dashboard",
-        "description": "Data visualization and automatic reports for small businesses."
+        "description": "Python + Plotly dashboard tracking revenue, churn, and pipeline across multiple clients. Auto-exports a weekly PDF snapshot for review.",
+        "cta": "View demo →"
+      },
+      "jobsite": {
+        "tag": "Demo Project",
+        "title": "Job Site Checklist + Photo Log",
+        "subtitle": "A native iOS capability demo for trade contractors who need clean records, fast.",
+        "description": "Today list, job-detail checklist with photo timeline, geo-stamped camera capture, one-tap PDF share. Built for electricians, HVAC, plumbing — 1–5 crew.",
+        "cta": "View on GitHub →"
       }
     },
     "comingSoon": "Coming soon"
@@ -123,7 +137,7 @@
     ]
   },
   "contact": {
-    "headline": "Ready to grow your business?",
+    "headline": "Write to me — let's talk about your project",
     "description": "Write to me and I'll respond within 24 hours. A brief conversation helps us understand if I can help you.",
     "form": {
       "namePlaceholder": "Your name",
