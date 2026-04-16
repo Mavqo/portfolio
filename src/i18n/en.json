@@ -1,86 +1,116 @@
 {
   "meta": {
-    "title": "Marco — Web Developer & AI Automation in Ticino",
-    "description": "I help small businesses grow online with fast websites and AI automation systems. Based in Ticino, I work with clients across Switzerland."
+    "title": "Marco — Full Stack Developer & AI Engineer | Upwork",
+    "description": "Freelance Full Stack developer and AI automation specialist on Upwork. I help startups and SaaS companies ship faster with modern web apps and intelligent workflows."
   },
   "nav": {
     "services": "Services",
     "work": "Work",
     "about": "About",
-    "contact": "Contact Me"
+    "contact": "Hire Me"
   },
   "hero": {
-    "label": "Web Developer & AI Automation in Ticino",
-    "headline": "Your ",
-    "headlineHighlight": "modern",
-    "headlineAfter": " website, ready in days — not months",
-    "description": "I help small businesses and professionals grow online with fast websites and systems that automate repetitive work. Based in Ticino, I work with clients across Switzerland.",
-    "ctaPrimary": "Let's talk about your project →",
+    "label": "Full Stack Developer & AI Engineer",
+    "headline": "I Build Apps & AI Pipelines for Startups",
+    "description": "Freelance developer on Upwork — I help startup and SaaS teams ship full-stack web apps and AI automation workflows, fast and production-ready.",
+    "ctaPrimary": "Hire me on Upwork →",
     "ctaSecondary": "See my work ↓",
-    "techStack": "Technologies"
+    "techStack": "Technologies",
+    "scrollIndicator": "Scroll"
   },
   "problems": {
     "label": "Sound familiar?",
-    "headline": "Running a business is hard enough",
-    "description": "You shouldn't worry about your website or lose hours to repetitive tasks",
+    "headline": "Building a startup is hard enough",
+    "description": "You shouldn't be held back by tech debt, slow delivery, or manual processes",
     "cards": {
       "website": {
-        "title": "Is your website driving customers away?",
-        "description": "An outdated or poorly mobile-optimized website destroys trust in seconds. Customers expect professionalism — and they judge you by your website."
+        "title": "Need to ship your MVP — yesterday?",
+        "description": "Investors and early users won't wait. Every week without a working product is a week of lost traction, feedback, and revenue.",
+        "solution": {
+          "title": "Fast, production-ready apps",
+          "description": "I build full-stack web apps with Astro, React, and FastAPI — from design to deployment. Clean code, tested, ready to scale."
+        }
       },
       "time": {
-        "title": "Spending hours on tasks that could do themselves?",
-        "description": "Replying to the same emails, entering data manually, keeping appointments in your head. These activities consume time you could invest in growing your business."
+        "title": "Drowning in manual, repetitive work?",
+        "description": "Your team is spending hours on tasks that should run themselves — data entry, follow-ups, report generation. That's time and money wasted.",
+        "solution": {
+          "title": "AI & automation pipelines",
+          "description": "I build n8n workflows and AI pipelines that eliminate manual work. Connect your tools, automate your processes, and reclaim your team's time."
+        }
       },
       "tech": {
-        "title": "Does technology feel like an obstacle?",
-        "description": "Too many tools, too much complexity, no one to explain simply. You shouldn't need to be a tech expert to have tools that work."
+        "title": "Outgrown your current tech stack?",
+        "description": "Your prototype worked — but it can't scale. Slow performance, mounting debt, and features that take weeks instead of days.",
+        "solution": {
+          "title": "Scalable architecture & refactoring",
+          "description": "I audit your codebase, identify bottlenecks, and refactor for performance and maintainability — so you can keep shipping fast."
+        }
       }
-    }
+    },
+    "solutionLabel": "Solution"
   },
   "services": {
     "label": "What I do",
-    "headline": "Two services. Concrete results.",
-    "description": "Focused on what really makes a difference for small businesses",
+    "headline": "Full Stack & AI — production-ready.",
+    "description": "Two core services for startups that need to ship fast and scale smart",
     "web": {
-      "tag": "Web Development",
-      "title": "Websites that convert visitors into customers",
-      "description": "I build fast, secure, and easy-to-manage websites. Every project is tailored to your business, not to impress other developers.",
+      "tag": "Full Stack Development",
+      "title": "Web apps your users will love",
+      "description": "From landing pages to complex SaaS dashboards — I build fast, scalable, and maintainable web applications using modern frameworks.",
       "features": [
-        "Responsive design: perfect on phone, tablet, and computer",
-        "Optimized speed: loading in under 3 seconds",
-        "Basic SEO: your customers find you on Google",
-        "CMS included: update content yourself"
-      ]
+        "React, Astro, Next.js — right tool for the job",
+        "FastAPI / Node.js backend with proper auth",
+        "PostgreSQL, Supabase, or your preferred DB",
+        "Docker + CI/CD — deploy anywhere"
+      ],
+      "price": "From $2,500"
     },
     "automation": {
-      "tag": "AI Automation",
-      "title": "Let AI do the repetitive work",
-      "description": "I connect your tools and automate workflows. You save time, reduce errors, and focus on what really matters.",
+      "tag": "AI & Automation",
+      "title": "Let AI handle the repetitive work",
+      "description": "I build intelligent pipelines that connect your tools, automate workflows, and add AI capabilities to your product.",
       "features": [
-        "Tool integration: I connect your existing software",
-        "Automated workflows: emails, follow-ups, data management",
-        "AI assistants: automatic responses to customers 24/7",
-        "Automatic reports: important data at a glance"
+        "n8n workflow automation",
+        "LangChain / LlamaIndex RAG pipelines",
+        "OpenAI API integration",
+        "Custom AI chatbots & agents"
+      ],
+      "price": "From $1,500"
+    },
+    "consulting": {
+      "tag": "Consulting",
+      "title": "Technical strategy for founders",
+      "description": "Not sure which stack to choose or how to architect your system? I help founders make the right technical decisions early.",
+      "price": "On request",
+      "features": [
+        "Tech stack selection",
+        "Architecture review",
+        "Code audit & roadmap",
+        "Async support via Upwork"
       ]
-    }
+    },
+    "cta": "Hire me on Upwork →"
   },
   "process": {
     "label": "The process",
-    "headline": "Simple. Fast. No surprises.",
-    "description": "From first message to live product — here's how we work together",
+    "headline": "Simple. Async. No surprises.",
+    "description": "From first message to shipped product — here's how we work together via Upwork",
     "steps": {
       "1": {
-        "title": "Discovery call",
-        "description": "We start with a free 30-minute call. You tell me about your business, goals, and problems. I understand what you really need before proposing a solution."
+        "title": "Intro call",
+        "description": "We start with a free 30-minute call to align on your goals, constraints, and timeline. I ask the right questions before writing a single line of code.",
+        "duration": "30 minutes"
       },
       "2": {
-        "title": "Build and develop",
-        "description": "I keep you updated throughout the process. You receive regular previews and your feedback is integral to the work. No surprises at delivery."
+        "title": "Build & iterate",
+        "description": "I work async-first with regular updates. You get working previews early and often — no big-bang deliveries, no surprises.",
+        "duration": "1–3 weeks"
       },
       "3": {
-        "title": "Launch and support",
-        "description": "The website goes live, everything works, you're happy. But it doesn't end there: I show you how to manage content and remain available for questions and small changes."
+        "title": "Ship & support",
+        "description": "We deploy together, I handle the handoff, and I remain available for questions, fixes, and follow-on work — all through Upwork.",
+        "duration": "Ongoing"
       }
     }
   },
@@ -90,9 +120,9 @@
     "description": "Concrete examples of websites and automations built for clients",
     "items": {
       "osteria": {
-        "title": "Osteria Bellavista — Restaurant in Bissone",
-        "description": "Elegant and functional website for an Italian restaurant on Lake Lugano. Online reservations, digital menu, and social media integration.",
-        "cta": "View project →"
+        "title": "Osteria Bellavista — Restaurant Website",
+        "description": "Elegant and functional website for an Italian restaurant. Online reservations, digital menu, and social media integration.",
+        "cta": "Private demo on request →"
       },
       "crm": {
         "title": "CRM Automation",
@@ -100,22 +130,82 @@
       },
       "dashboard": {
         "title": "Analytics Dashboard",
-        "description": "Data visualization and automatic reports for small businesses."
+        "description": "Data visualization and automatic reports for SaaS teams."
+      },
+      "leadspark": {
+        "title": "LeadSpark",
+        "description": "Landing page with AI qualification chatbot and n8n automations for lead follow-up operations.",
+        "cta": "Private demo on request →"
+      },
+      "analyticsdashboard": {
+        "title": "Analytics Dashboard",
+        "description": "Frontend analytics dashboard prototype for e-commerce with mock data, KPI cards, and interactive filters.",
+        "cta": "Private demo on request →"
       }
     },
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "github": "GitHub",
+    "liveDemo": "Live demo"
   },
   "about": {
     "headline": "Hi, I'm Marco",
     "paragraphs": [
-      "I develop websites and automation systems for small businesses that want to grow online without complications. After years of experience in the digital industry, I've chosen to specialize in what I do best: creating digital tools that work, without unnecessary frills.",
-      "I believe in simplicity and transparency. I don't sell complicated solutions — I build tools that solve real problems. My approach is direct: I listen, understand, build. No jargon, no impossible promises. Just concrete results.",
-      "I'm based in Ticino and work primarily with clients in Italian Switzerland and across Switzerland. I speak Italian, German, and English — and I know how important it is to communicate in the client's language."
-    ]
+      "I'm a freelance Full Stack developer and AI engineer, available worldwide via Upwork. I specialize in building production-ready web applications and AI automation pipelines for startups and SaaS companies.",
+      "My approach is simple: understand the problem deeply, build the right solution, ship fast. I write clean, tested, maintainable code — and I communicate clearly throughout the project so there are no surprises.",
+      "I work async-first, which means I fit naturally into remote teams across any timezone. Whether you need a full MVP, a new feature, or an automation that saves your team hours every week — I'm here to help."
+    ],
+    "stats": {
+      "experience": {
+        "value": "5+",
+        "label": "Years Experience"
+      },
+      "projects": {
+        "value": "20+",
+        "label": "Projects Shipped"
+      },
+      "clients": {
+        "value": "Global",
+        "label": "Upwork Freelancer"
+      },
+      "languages": {
+        "value": "2",
+        "label": "EN / IT"
+      }
+    },
+    "timeline": {
+      "m1": {
+        "year": "2019",
+        "title": "System Engineer"
+      },
+      "m2": {
+        "year": "2022",
+        "title": "AI & Automation"
+      },
+      "m3": {
+        "year": "2024",
+        "title": "Freelance on Upwork"
+      }
+    },
+    "downloadCV": "Download CV"
   },
   "contact": {
-    "headline": "Ready to grow your business?",
-    "description": "Write to me and I'll respond within 24 hours. A brief conversation helps us understand if I can help you.",
+    "headline": "Ready to build something great?",
+    "description": "Send me a message on Upwork or use the form below — I respond within 24 hours.",
+    "email": "marco.mongelli@outlook.it",
+    "callCta": "Message me on Upwork →",
+    "projectType": {
+      "label": "Project type",
+      "placeholder": "Select project type",
+      "web": "Web App / Full Stack",
+      "ai": "AI & Automation",
+      "consulting": "Consulting",
+      "other": "Other"
+    },
+    "trust": {
+      "response": "Reply within 24h",
+      "freeCall": "Free intro call",
+      "noCommitment": "No commitment"
+    },
     "form": {
       "namePlaceholder": "Your name",
       "emailPlaceholder": "Your email",
@@ -126,10 +216,18 @@
     },
     "success": {
       "title": "Thank you!",
-      "message": "I've received your message and will get back to you as soon as possible."
+      "message": "I've received your message and will get back to you within 24 hours."
     }
   },
   "footer": {
-    "copyright": "Made with ❤️ in Ticino"
-  }
+    "copyright": "Marco — Full Stack & AI Freelancer",
+    "tagline": "Building web apps and AI pipelines for startups worldwide.",
+    "sitemapTitle": "Sitemap",
+    "connectTitle": "Connect",
+    "privacy": "Privacy Policy"
+  },
+  "hero.socialProof.experience": "5+ years of experience",
+  "hero.socialProof.projects": "20+ projects shipped",
+  "hero.socialProof.location": "Available worldwide via Upwork",
+  "hero.scrollIndicator": "Scroll"
 }
