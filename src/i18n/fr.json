@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "title": "Marco — Full Stack Developer & AI Engineer | Upwork",
+    "description": "Développeur Full Stack freelance et spécialiste en automatisation IA sur Upwork. J'aide les startups et les entreprises SaaS à livrer des applications web modernes et des workflows intelligents plus rapidement."
+  },
+  "nav": {
+    "services": "Services",
+    "work": "Travaux",
+    "about": "À propos",
+    "contact": "Me recruter"
+  },
+  "hero": {
+    "label": "Full Stack Developer & AI Engineer",
+    "headline": "Je construis des Apps & Pipelines IA pour les Startups",
+    "description": "Développeur freelance sur Upwork — j'aide les équipes startup et SaaS à livrer des applications web full-stack et des workflows d'automatisation IA, rapidement et prêts pour la production.",
+    "ctaPrimary": "Me recruter sur Upwork →",
+    "ctaSecondary": "Voir mes travaux ↓",
+    "techStack": "Technologies",
+    "scrollIndicator": "Défiler"
+  },
+  "problems": {
+    "label": "Ça vous parle ?",
+    "headline": "Construire une startup est déjà assez difficile",
+    "description": "Vous ne devriez pas être freiné par la dette technique, des livraisons lentes ou des processus manuels",
+    "cards": {
+      "website": {
+        "title": "Besoin de livrer votre MVP — hier ?",
+        "description": "Les investisseurs et les premiers utilisateurs n'attendent pas. Chaque semaine sans produit fonctionnel est une semaine de traction, de feedback et de revenus perdus.",
+        "solution": {
+          "title": "Applications rapides et prêtes pour la production",
+          "description": "Je construis des applications web full-stack avec Astro, React et FastAPI — du design au déploiement. Code propre, testé, prêt à scaler."
+        }
+      },
+      "time": {
+        "title": "Submergé par le travail manuel et répétitif ?",
+        "description": "Votre équipe passe des heures sur des tâches qui devraient s'exécuter seules — saisie de données, relances, génération de rapports. Du temps et de l'argent gaspillés.",
+        "solution": {
+          "title": "Pipelines IA & automatisation",
+          "description": "Je construis des workflows n8n et des pipelines IA qui éliminent le travail manuel. Connectez vos outils, automatisez vos processus et redonnez du temps à votre équipe."
+        }
+      },
+      "tech": {
+        "title": "Vous avez dépassé votre stack technologique actuel ?",
+        "description": "Votre prototype fonctionnait — mais il ne peut pas scaler. Performance lente, dette croissante et des fonctionnalités qui prennent des semaines au lieu de jours.",
+        "solution": {
+          "title": "Architecture scalable & refactoring",
+          "description": "J'audite votre codebase, identifie les goulots d'étranglement et refactorise pour la performance et la maintenabilité — afin que vous puissiez continuer à livrer rapidement."
+        }
+      }
+    },
+    "solutionLabel": "Solution"
+  },
+  "services": {
+    "label": "Ce que je fais",
+    "headline": "Full Stack & IA — prêts pour la production.",
+    "description": "Deux services clés pour les startups qui doivent livrer vite et scaler intelligemment",
+    "web": {
+      "tag": "Full Stack Development",
+      "title": "Des applications web que vos utilisateurs adoreront",
+      "description": "Des landing pages aux dashboards SaaS complexes — je construis des applications web rapides, scalables et maintenables avec des frameworks modernes.",
+      "features": [
+        "React, Astro, Next.js — le bon outil pour le bon usage",
+        "Backend FastAPI / Node.js avec auth appropriée",
+        "PostgreSQL, Supabase ou votre base de données préférée",
+        "Docker + CI/CD — déployez n'importe où"
+      ],
+      "price": "À partir de $2 500"
+    },
+    "automation": {
+      "tag": "IA & Automatisation",
+      "title": "Laissez l'IA gérer le travail répétitif",
+      "description": "Je construis des pipelines intelligents qui connectent vos outils, automatisent les workflows et ajoutent des capacités IA à votre produit.",
+      "features": [
+        "Automatisation de workflow n8n",
+        "Pipelines RAG LangChain / LlamaIndex",
+        "Intégration de l'API OpenAI",
+        "Chatbots & agents IA personnalisés"
+      ],
+      "price": "À partir de $1 500"
+    },
+    "consulting": {
+      "tag": "Conseil",
+      "title": "Stratégie technique pour les fondateurs",
+      "description": "Vous ne savez pas quel stack choisir ou comment architecturer votre système ? J'aide les fondateurs à prendre les bonnes décisions techniques dès le début.",
+      "price": "Sur demande",
+      "features": [
+        "Sélection du stack technique",
+        "Revue d'architecture",
+        "Audit de code & roadmap",
+        "Support async via Upwork"
+      ]
+    },
+    "cta": "Me recruter sur Upwork →"
+  },
+  "process": {
+    "label": "Le processus",
+    "headline": "Simple. Async. Sans surprises.",
+    "description": "Du premier message au produit livré — voici comment nous travaillons ensemble via Upwork",
+    "steps": {
+      "1": {
+        "title": "Appel de découverte",
+        "description": "Nous commençons par un appel gratuit de 30 minutes pour nous aligner sur vos objectifs, contraintes et calendrier. Je pose les bonnes questions avant d'écrire une seule ligne de code.",
+        "duration": "30 minutes"
+      },
+      "2": {
+        "title": "Construction & itération",
+        "description": "Je travaille en async-first avec des mises à jour régulières. Vous recevez des aperçus fonctionnels tôt et souvent — pas de livraisons big-bang, pas de surprises.",
+        "duration": "1–3 semaines"
+      },
+      "3": {
+        "title": "Livraison & support",
+        "description": "Nous déployons ensemble, je gère la passation, et je reste disponible pour les questions, les corrections et les travaux de suivi — tout via Upwork.",
+        "duration": "En continu"
+      }
+    }
+  },
+  "projects": {
+    "label": "Mes travaux",
+    "headline": "Projets récents",
+    "description": "Exemples concrets de sites web et d'automatisations réalisés pour des clients",
+    "items": {
+      "osteria": {
+        "title": "Osteria Bellavista — Site Restaurant",
+        "description": "Site web élégant et fonctionnel pour un restaurant italien. Réservations en ligne, menu digital et intégration des réseaux sociaux.",
+        "cta": "Démo privée sur demande →"
+      },
+      "leadspark": {
+        "title": "LeadSpark",
+        "description": "Landing page avec chatbot IA de qualification de leads et automatisations n8n pour les opérations de suivi.",
+        "cta": "Démo Live →"
+      },
+      "medianalytics": {
+        "title": "MediAnalytics Pro",
+        "description": "Dashboard analytics professionnel pour les centres de santé et de bien-être. Gestion des patients, planification des rendez-vous, suivi des KPI et facturation — tout en un seul endroit.",
+        "cta": "Démo Live →"
+      }
+    },
+    "comingSoon": "Bientôt disponible",
+    "github": "GitHub",
+    "liveDemo": "Démo live"
+  },
+  "about": {
+    "headline": "Bonjour, je suis Marco",
+    "paragraphs": [
+      "Je suis un développeur Full Stack freelance et ingénieur IA, disponible dans le monde entier via Upwork. Je me spécialise dans la création d'applications web prêtes pour la production et de pipelines d'automatisation IA pour les startups et les entreprises SaaS.",
+      "Mon approche est simple : comprendre le problème en profondeur, construire la bonne solution, livrer vite. J'écris du code propre, testé et maintenable — et je communique clairement tout au long du projet pour éviter toute surprise.",
+      "Je travaille en async-first, ce qui signifie que je m'intègre naturellement dans les équipes distantes de n'importe quel fuseau horaire. Que vous ayez besoin d'un MVP complet, d'une nouvelle fonctionnalité ou d'une automatisation qui fait gagner des heures à votre équipe chaque semaine — je suis là pour vous aider."
+    ],
+    "stats": {
+      "experience": { "value": "5+", "label": "Années d'expérience" },
+      "projects": { "value": "20+", "label": "Projets livrés" },
+      "clients": { "value": "Global", "label": "Freelancer Upwork" },
+      "languages": { "value": "2", "label": "EN / IT" }
+    },
+    "timeline": {
+      "m1": { "year": "2019", "title": "System Engineer" },
+      "m2": { "year": "2022", "title": "IA & Automatisation" },
+      "m3": { "year": "2024", "title": "Freelance sur Upwork" }
+    },
+    "downloadCV": "Télécharger le CV"
+  },
+  "contact": {
+    "headline": "Prêt à construire quelque chose de grand ?",
+    "description": "Envoyez-moi un message sur Upwork ou utilisez le formulaire ci-dessous — je réponds dans les 24 heures.",
+    "email": "marco.mongelli@outlook.it",
+    "callCta": "Envoyez-moi un message sur Upwork →",
+    "projectType": {
+      "label": "Type de projet",
+      "placeholder": "Sélectionner le type de projet",
+      "web": "Application Web / Full Stack",
+      "ai": "IA & Automatisation",
+      "consulting": "Conseil",
+      "other": "Autre"
+    },
+    "trust": {
+      "response": "Réponse sous 24h",
+      "freeCall": "Appel de découverte gratuit",
+      "noCommitment": "Sans engagement"
+    },
+    "form": {
+      "namePlaceholder": "Votre nom",
+      "emailPlaceholder": "Votre e-mail",
+      "messagePlaceholder": "Parlez-moi de votre projet",
+      "submit": "Envoyer le message →",
+      "sending": "Envoi en cours...",
+      "error": "Erreur — veuillez réessayer"
+    },
+    "success": {
+      "title": "Merci !",
+      "message": "J'ai bien reçu votre message et vous répondrai dans les 24 heures."
+    }
+  },
+  "footer": {
+    "copyright": "Marco — Full Stack & AI Freelancer",
+    "tagline": "Applications web et pipelines IA pour les startups du monde entier.",
+    "sitemapTitle": "Plan du site",
+    "connectTitle": "Me contacter",
+    "privacy": "Politique de confidentialité"
+  },
+  "hero.socialProof.experience": "5+ ans d'expérience",
+  "hero.socialProof.projects": "20+ projets livrés",
+  "hero.socialProof.location": "Disponible dans le monde entier via Upwork",
+  "hero.scrollIndicator": "Défiler"
+}
