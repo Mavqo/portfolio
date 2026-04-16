@@ -122,25 +122,17 @@
       "osteria": {
         "title": "Osteria Bellavista — Restaurant Website",
         "description": "Elegant and functional website for an Italian restaurant. Online reservations, digital menu, and social media integration.",
-        "cta": "Private demo on request →"
-      },
-      "crm": {
-        "title": "CRM Automation",
-        "description": "Automation system for lead management and automatic follow-ups."
-      },
-      "dashboard": {
-        "title": "Analytics Dashboard",
-        "description": "Data visualization and automatic reports for SaaS teams."
+        "cta": "Live Demo →"
       },
       "leadspark": {
         "title": "LeadSpark",
         "description": "Landing page with AI qualification chatbot and n8n automations for lead follow-up operations.",
-        "cta": "Private demo on request →"
+        "cta": "Live Demo →"
       },
-      "analyticsdashboard": {
-        "title": "Analytics Dashboard",
-        "description": "Frontend analytics dashboard prototype for e-commerce with mock data, KPI cards, and interactive filters.",
-        "cta": "Private demo on request →"
+      "medianalytics": {
+        "title": "MediAnalytics Pro",
+        "description": "Professional analytics dashboard for healthcare & wellness centers. Patient management, appointment scheduling, KPI tracking, and billing — all in one place.",
+        "cta": "Live Demo →"
       }
     },
     "comingSoon": "Coming soon",
