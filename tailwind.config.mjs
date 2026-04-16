@@ -17,7 +17,7 @@ export default {
         'bg-dark': 'var(--bg-dark)',
       },
       fontFamily: {
-        sans: ['Segoe UI', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Inter', 'Segoe UI', 'system-ui', '-apple-system', 'sans-serif'],
         script: ['Dancing Script', 'cursive'],
       },
       borderRadius: {

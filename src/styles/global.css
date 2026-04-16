@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   --bg: #ffffff;
@@ -6,8 +6,8 @@
   --bg-dark: #1a1a2e;
   --text: #1a1a2e;
   --text-muted: #666666;
-  --accent: #4a4a8a;
-  --accent-light: #eeeeff;
+  --accent: #4f46e5;
+  --accent-light: #eef2ff;
   --border: #e5e5f0;
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -21,7 +21,7 @@
   --bg-dark: #0a0a14;
   --text: #e4e4f0;
   --text-muted: #8888aa;
-  --accent: #8080d0;
+  --accent: #818cf8;
   --accent-light: #22224a;
   --border: #2a2a44;
 }
@@ -37,11 +37,11 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
-  font-size: 15px;
+  font-size: 16px;
   overflow-x: hidden;
 }
 
