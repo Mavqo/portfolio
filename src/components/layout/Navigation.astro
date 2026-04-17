@@ -43,7 +43,7 @@ const languages = [
       <li>
         <a 
           href="#services" 
-          class="text-base font-medium text-muted transition-colors duration-200 relative pb-1 hover:text-text after:content-[''] after:absolute after:bottom-[-1px] after:left-0 after:right-0 after:h-0.5 after:bg-accent after:rounded-sm after:scale-x-0 after:transition-transform after:duration-200 hover:after:scale-x-100"
+          class="nav-link text-base font-medium text-muted transition-colors duration-200 relative pb-1 hover:text-text after:content-[''] after:absolute after:bottom-[-1px] after:left-0 after:right-0 after:h-0.5 after:bg-accent after:rounded-sm after:scale-x-0 after:transition-transform after:duration-200 hover:after:scale-x-100"
           data-i18n="nav.services"
         >
           Servizi
@@ -52,7 +52,7 @@ const languages = [
       <li>
         <a 
           href="#work" 
-          class="text-base font-medium text-muted transition-colors duration-200 relative pb-1 hover:text-text after:content-[''] after:absolute after:bottom-[-1px] after:left-0 after:right-0 after:h-0.5 after:bg-accent after:rounded-sm after:scale-x-0 after:transition-transform after:duration-200 hover:after:scale-x-100"
+          class="nav-link text-base font-medium text-muted transition-colors duration-200 relative pb-1 hover:text-text after:content-[''] after:absolute after:bottom-[-1px] after:left-0 after:right-0 after:h-0.5 after:bg-accent after:rounded-sm after:scale-x-0 after:transition-transform after:duration-200 hover:after:scale-x-100"
           data-i18n="nav.work"
         >
           Progetti
@@ -62,10 +62,31 @@ const languages = [
       <li>
         <a 
           href="#about" 
-          class="text-base font-medium text-muted transition-colors duration-200 relative pb-1 hover:text-text after:content-[''] after:absolute after:bottom-[-1px] after:left-0 after:right-0 after:h-0.5 after:bg-accent after:rounded-sm after:scale-x-0 after:transition-transform after:duration-200 hover:after:scale-x-100"
+          class="nav-link text-base font-medium text-muted transition-colors duration-200 relative pb-1 hover:text-text after:content-[''] after:absolute after:bottom-[-1px] after:left-0 after:right-0 after:h-0.5 after:bg-accent after:rounded-sm after:scale-x-0 after:transition-transform after:duration-200 hover:after:scale-x-100"
           data-i18n="nav.about"
         >
           Chi sono
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="#contact"
+          class="nav-link text-base font-medium text-muted transition-colors duration-200 relative pb-1 hover:text-text after:content-[''] after:absolute after:bottom-[-1px] after:left-0 after:right-0 after:h-0.5 after:bg-accent after:rounded-sm after:scale-x-0 after:transition-transform after:duration-200 hover:after:scale-x-100 lg:hidden"
+          data-i18n="nav.contact"
+        >
+          Contattami
+        </a>
+      </li>
+      <li class="lg:hidden">
+        <a
+          href="https://www.upwork.com/freelancers/~mavqo"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-2 px-3 py-2 rounded-lg bg-[#14a800] text-white text-sm font-semibold"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.543-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.438-5.439-5.438z"/></svg>
+          Hire me on Upwork
         </a>
       </li>
     </ul>
@@ -117,9 +138,20 @@ const languages = [
     </div>
 
     <!-- CTA -->
-    <Button href="#contact" variant="primary" size="sm" class="hidden lg:inline-flex ml-3 rounded-full bg-gradient-to-br from-accent to-[#6868bb] shadow-md hover:shadow-lg">
-      <span data-i18n="nav.contact">Contattami</span> →
-    </Button>
+    <div class="hidden lg:flex items-center gap-2 ml-3">
+      <a
+        href="https://www.upwork.com/freelancers/~mavqo"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#14a800] hover:bg-[#12970a] text-white text-sm font-semibold transition-colors duration-200 shadow-md hover:shadow-lg"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.543-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.438-5.439-5.438z"/></svg>
+        Hire me on Upwork
+      </a>
+      <Button href="#contact" variant="primary" size="sm" class="rounded-full bg-gradient-to-br from-accent to-[#6868bb] shadow-md hover:shadow-lg">
+        <span data-i18n="nav.contact">Contact</span> →
+      </Button>
+    </div>
   </nav>
 </header>
 
@@ -143,6 +175,9 @@ const languages = [
     navLinks?.classList.toggle('p-4');
     navLinks?.classList.toggle('border-b');
     navLinks?.classList.toggle('border-border');
+    // Show contact link in mobile menu if hidden on desktop
+    const contactLink = navLinks?.querySelector('a[href="#contact"]');
+    contactLink?.classList.toggle('lg:hidden');
   });
 
   // Language dropdown
@@ -263,4 +298,39 @@ const languages = [
   
   // Initialize on load
   initLanguageButton();
+
+  // Active scroll state for nav links
+  const sectionIds = ['services', 'work', 'about', 'contact'];
+  const navLinkEls = document.querySelectorAll<HTMLAnchorElement>('.nav-link');
+
+  function setActiveNavLink(activeId: string | null) {
+    navLinkEls.forEach(link => {
+      const href = link.getAttribute('href')?.slice(1);
+      if (href && href === activeId) {
+        link.classList.add('text-accent', 'after:scale-x-100');
+        link.classList.remove('text-muted');
+      } else {
+        link.classList.remove('text-accent', 'after:scale-x-100');
+        link.classList.add('text-muted');
+      }
+    });
+  }
+
+  const observerOptions: IntersectionObserverInit = {
+    rootMargin: '-40% 0px -40% 0px',
+    threshold: 0,
+  };
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setActiveNavLink(entry.target.id);
+      }
+    });
+  }, observerOptions);
+
+  sectionIds.forEach(id => {
+    const section = document.getElementById(id);
+    if (section) sectionObserver.observe(section);
+  });
 </script>

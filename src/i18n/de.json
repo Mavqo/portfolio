@@ -1,86 +1,116 @@
 {
   "meta": {
-    "title": "Marco — Webentwickler & KI-Automatisierung im Tessin",
-    "description": "Ich helfe kleinen Unternehmen, online zu wachsen, mit schnellen Websites und KI-Automatisierungssystemen. Basierend im Tessin, arbeite ich mit Kunden in der ganzen Schweiz."
+    "title": "Marco — Full Stack Developer & AI Engineer | Upwork",
+    "description": "Freiberuflicher Full Stack Entwickler und KI-Automatisierungsspezialist auf Upwork. Ich helfe Startups und SaaS-Unternehmen, moderne Web-Apps und intelligente Workflows schneller zu liefern."
   },
   "nav": {
     "services": "Dienstleistungen",
     "work": "Arbeiten",
     "about": "Über mich",
-    "contact": "Kontakt"
+    "contact": "Engagiere mich"
   },
   "hero": {
-    "label": "Webentwickler & KI-Automatisierung im Tessin",
-    "headline": "Deine ",
-    "headlineHighlight": "moderne",
-    "headlineAfter": " Website, fertig in Tagen — nicht Monaten",
-    "description": "Ich helfe kleinen Unternehmen und Fachleuten, online zu wachsen, mit schnellen Websites und Systemen, die repetitive Arbeit automatisieren. Basierend im Tessin, arbeite ich mit Kunden in der ganzen Schweiz.",
-    "ctaPrimary": "Lass uns über dein Projekt sprechen →",
+    "label": "Full Stack Developer & AI Engineer",
+    "headline": "Ich baue Apps & KI-Pipelines für Startups",
+    "description": "Freiberuflicher Entwickler auf Upwork — ich helfe Startup- und SaaS-Teams, Full-Stack-Web-Apps und KI-Automatisierungsworkflows schnell und produktionsreif zu liefern.",
+    "ctaPrimary": "Engagiere mich auf Upwork →",
     "ctaSecondary": "Meine Arbeiten ansehen ↓",
-    "techStack": "Technologien"
+    "techStack": "Technologien",
+    "scrollIndicator": "Scrollen"
   },
   "problems": {
     "label": "Kommt dir das bekannt vor?",
-    "headline": "Ein Unternehmen zu führen ist schon schwierig genug",
-    "description": "Du solltest dich nicht um deine Website sorgen oder Stunden mit repetitiven Aufgaben verlieren",
+    "headline": "Ein Startup aufzubauen ist schon schwer genug",
+    "description": "Du solltest nicht durch technische Schulden, langsame Lieferung oder manuelle Prozesse aufgehalten werden",
     "cards": {
       "website": {
-        "title": "Schreckt deine Website Kunden ab?",
-        "description": "Eine veraltete oder nicht mobile-freundliche Website verliert innerhalb weniger Sekunden das Vertrauen. Kunden erwarten Professionalität — und beurteilen diese anhand deiner Website."
+        "title": "Musst du dein MVP — gestern — liefern?",
+        "description": "Investoren und frühe Nutzer warten nicht. Jede Woche ohne ein funktionierendes Produkt ist eine Woche verlorener Traktion, verlorenen Feedbacks und verlorener Einnahmen.",
+        "solution": {
+          "title": "Schnelle, produktionsreife Apps",
+          "description": "Ich baue Full-Stack-Web-Apps mit Astro, React und FastAPI — vom Design bis zum Deployment. Sauberer Code, getestet, bereit zu skalieren."
+        }
       },
       "time": {
-        "title": "Verbringst du Stunden mit Aufgaben, die sich selbst erledigen könnten?",
-        "description": "Auf die gleichen E-Mails antworten, Daten manuell eingeben, Termine im Kopf behalten. Diese Tätigkeiten kosten Zeit, die du in dein Geschäftswachstum investieren könntest."
+        "title": "Ertrinkt du in manueller, repetitiver Arbeit?",
+        "description": "Dein Team verbringt Stunden mit Aufgaben, die sich selbst erledigen sollten — Dateneingabe, Follow-ups, Berichtserstellung. Das ist verschwendete Zeit und verschwendetes Geld.",
+        "solution": {
+          "title": "KI & Automatisierungs-Pipelines",
+          "description": "Ich baue n8n-Workflows und KI-Pipelines, die manuelle Arbeit eliminieren. Verbinde deine Tools, automatisiere deine Prozesse und gib deinem Team die Zeit zurück."
+        }
       },
       "tech": {
-        "title": "Kommt dir Technologie wie ein Hindernis vor?",
-        "description": "Zu viele Tools, zu viel Komplexität, niemand der es einfach erklärt. Du solltest kein Technikexperte sein, um funktionierende Werkzeuge zu haben."
+        "title": "Bist du über deinen aktuellen Tech-Stack hinausgewachsen?",
+        "description": "Dein Prototyp hat funktioniert — aber er kann nicht skalieren. Langsame Performance, wachsende Schulden und Features, die Wochen statt Tage brauchen.",
+        "solution": {
+          "title": "Skalierbare Architektur & Refactoring",
+          "description": "Ich prüfe deine Codebasis, identifiziere Engpässe und refaktoriere für Performance und Wartbarkeit — damit du weiterhin schnell liefern kannst."
+        }
       }
-    }
+    },
+    "solutionLabel": "Lösung"
   },
   "services": {
     "label": "Was ich mache",
-    "headline": "Zwei Dienstleistungen. Konkrete Ergebnisse.",
-    "description": "Fokussiert auf das, was für kleine Unternehmen wirklich einen Unterschied macht",
+    "headline": "Full Stack & KI — produktionsreif.",
+    "description": "Zwei Kernleistungen für Startups, die schnell liefern und smart skalieren müssen",
     "web": {
-      "tag": "Webentwicklung",
-      "title": "Websites, die Besucher in Kunden verwandeln",
-      "description": "Ich baue schnelle, sichere und einfach zu verwaltende Websites. Jedes Projekt ist auf dein Unternehmen ausgerichtet, nicht darauf, andere Entwickler zu beeindrucken.",
+      "tag": "Full Stack Development",
+      "title": "Web-Apps, die deine Nutzer lieben werden",
+      "description": "Von Landing Pages bis zu komplexen SaaS-Dashboards — ich baue schnelle, skalierbare und wartbare Webanwendungen mit modernen Frameworks.",
       "features": [
-        "Responsives Design: perfekt auf Telefon, Tablet und Computer",
-        "Optimierte Geschwindigkeit: Ladezeit unter 3 Sekunden",
-        "Basis-SEO: deine Kunden finden dich auf Google",
-        "CMS inklusive: Inhalte selbst aktualisieren"
-      ]
+        "React, Astro, Next.js — das richtige Tool für den Job",
+        "FastAPI / Node.js Backend mit korrekter Auth",
+        "PostgreSQL, Supabase oder deine bevorzugte DB",
+        "Docker + CI/CD — deploy überall"
+      ],
+      "price": "Ab $2.500"
     },
     "automation": {
-      "tag": "KI-Automatisierung",
+      "tag": "KI & Automatisierung",
       "title": "Lass KI die repetitive Arbeit erledigen",
-      "description": "Ich verbinde deine Tools und automatisiere Arbeitsabläufe. Du sparst Zeit, reduzierst Fehler und konzentrierst dich auf das, was wirklich zählt.",
+      "description": "Ich baue intelligente Pipelines, die deine Tools verbinden, Workflows automatisieren und deinem Produkt KI-Fähigkeiten hinzufügen.",
       "features": [
-        "Tool-Integration: Ich verbinde deine bestehende Software",
-        "Automatisierte Workflows: E-Mails, Follow-ups, Datenverwaltung",
-        "KI-Assistenten: Automatische Antworten für Kunden 24/7",
-        "Automatische Berichte: Wichtige Daten auf einen Blick"
+        "n8n Workflow-Automatisierung",
+        "LangChain / LlamaIndex RAG-Pipelines",
+        "OpenAI API Integration",
+        "Benutzerdefinierte KI-Chatbots & Agenten"
+      ],
+      "price": "Ab $1.500"
+    },
+    "consulting": {
+      "tag": "Beratung",
+      "title": "Technische Strategie für Gründer",
+      "description": "Unsicher, welchen Stack du wählen oder wie du dein System architektieren sollst? Ich helfe Gründern, früh die richtigen technischen Entscheidungen zu treffen.",
+      "price": "Auf Anfrage",
+      "features": [
+        "Tech-Stack-Auswahl",
+        "Architektur-Review",
+        "Code-Audit & Roadmap",
+        "Async-Support via Upwork"
       ]
-    }
+    },
+    "cta": "Engagiere mich auf Upwork →"
   },
   "process": {
     "label": "Der Prozess",
-    "headline": "Einfach. Schnell. Keine Überraschungen.",
-    "description": "Von der ersten Nachricht bis zum Live-Produkt — so arbeiten wir zusammen",
+    "headline": "Einfach. Async. Keine Überraschungen.",
+    "description": "Von der ersten Nachricht bis zum gelieferten Produkt — so arbeiten wir via Upwork zusammen",
     "steps": {
       "1": {
-        "title": "Kennenlerngespräch",
-        "description": "Wir beginnen mit einem kostenlosen 30-minütigen Gespräch. Du erzählst mir von deinem Unternehmen, deinen Zielen und Problemen. Ich verstehe, was du wirklich brauchst, bevor ich eine Lösung vorschlage."
+        "title": "Erstgespräch",
+        "description": "Wir beginnen mit einem kostenlosen 30-minütigen Gespräch, um uns über deine Ziele, Einschränkungen und den Zeitplan abzustimmen. Ich stelle die richtigen Fragen, bevor ich eine einzige Zeile Code schreibe.",
+        "duration": "30 Minuten"
       },
       "2": {
-        "title": "Aufbau und Entwicklung",
-        "description": "Ich halte dich während des gesamten Prozesses auf dem Laufenden. Du erhältst regelmäßige Vorschauen und dein Feedback ist integraler Bestandteil der Arbeit. Keine Überraschungen bei der Lieferung."
+        "title": "Bauen & iterieren",
+        "description": "Ich arbeite async-first mit regelmäßigen Updates. Du erhältst früh und oft funktionierende Vorschauen — keine Big-Bang-Lieferungen, keine Überraschungen.",
+        "duration": "1–3 Wochen"
       },
       "3": {
-        "title": "Launch und Support",
-        "description": "Die Website geht online, alles funktioniert, du bist zufrieden. Aber damit endet es nicht: Ich zeige dir, wie du Inhalte verwaltest, und bleibe für Fragen und kleine Änderungen verfügbar."
+        "title": "Liefern & Support",
+        "description": "Wir deployen gemeinsam, ich manage den Handoff und bleibe für Fragen, Fixes und Folgearbeiten verfügbar — alles über Upwork.",
+        "duration": "Fortlaufend"
       }
     }
   },
@@ -90,32 +120,63 @@
     "description": "Konkrete Beispiele von Websites und Automatisierungen für Kunden",
     "items": {
       "osteria": {
-        "title": "Osteria Bellavista — Restaurant in Bissone",
-        "description": "Elegante und funktionale Website für ein italienisches Restaurant am Luganersee. Online-Reservierungen, digitale Speisekarte und Social-Media-Integration.",
-        "cta": "Projekt ansehen →"
+        "title": "Osteria Bellavista — Restaurant-Website",
+        "description": "Elegante und funktionale Website für ein italienisches Restaurant. Online-Reservierungen, digitale Speisekarte und Social-Media-Integration.",
+        "cta": "Private Demo auf Anfrage →"
       },
-      "crm": {
-        "title": "CRM-Automatisierung",
-        "description": "Automatisierungssystem für Lead-Management und automatische Follow-ups."
+      "leadspark": {
+        "title": "LeadSpark",
+        "description": "Landing Page mit KI-Qualifizierungs-Chatbot und n8n-Automatisierungen für Lead-Follow-up-Operationen.",
+        "cta": "Live Demo →"
       },
-      "dashboard": {
-        "title": "Analytics Dashboard",
-        "description": "Datenvisualisierung und automatische Berichte für kleine Unternehmen."
+      "medianalytics": {
+        "title": "MediAnalytics Pro",
+        "description": "Professionelles Analytics-Dashboard für Gesundheits- und Wellnesszentren. Patientenverwaltung, Terminplanung, KPI-Tracking und Abrechnung — alles an einem Ort.",
+        "cta": "Live Demo →"
       }
     },
-    "comingSoon": "Demnächst"
+    "comingSoon": "Demnächst",
+    "github": "GitHub",
+    "liveDemo": "Live Demo"
   },
   "about": {
     "headline": "Hallo, ich bin Marco",
     "paragraphs": [
-      "Ich entwickle Websites und Automatisierungssysteme für kleine Unternehmen, die online wachsen wollen, ohne Komplikationen. Nach Jahren der Erfahrung in der digitalen Branche habe ich mich auf das spezialisiert, was ich am besten kann: digitale Werkzeuge erstellen, die funktionieren, ohne unnötigen Schnickschnack.",
-      "Ich glaube an Einfachheit und Transparenz. Ich verkaufe keine komplizierten Lösungen — ich baue Werkzeuge, die reale Probleme lösen. Mein Ansatz ist direkt: Ich höre zu, verstehe, baue. Keine Fachjargon, keine unmöglichen Versprechen. Nur konkrete Ergebnisse.",
-      "Ich bin im Tessin ansässig und arbeite hauptsächlich mit Kunden in der italienischen Schweiz und in der ganzen Schweiz. Ich spreche Italienisch, Deutsch und Englisch — und weiß, wie wichtig es ist, in der Sprache des Kunden zu kommunizieren."
-    ]
+      "Ich bin ein freiberuflicher Full Stack Entwickler und KI-Engineer, weltweit verfügbar über Upwork. Ich spezialisiere mich auf den Aufbau produktionsreifer Webanwendungen und KI-Automatisierungspipelines für Startups und SaaS-Unternehmen.",
+      "Mein Ansatz ist einfach: das Problem tief verstehen, die richtige Lösung bauen, schnell liefern. Ich schreibe sauberen, getesteten, wartbaren Code — und kommuniziere während des gesamten Projekts klar, damit es keine Überraschungen gibt.",
+      "Ich arbeite async-first, was bedeutet, dass ich mich natürlich in Remote-Teams in jeder Zeitzone einfüge. Ob du ein vollständiges MVP, ein neues Feature oder eine Automatisierung brauchst, die deinem Team jede Woche Stunden spart — ich bin hier, um zu helfen."
+    ],
+    "stats": {
+      "experience": { "value": "5+", "label": "Jahre Erfahrung" },
+      "projects": { "value": "20+", "label": "Projekte geliefert" },
+      "clients": { "value": "Global", "label": "Upwork Freelancer" },
+      "languages": { "value": "2", "label": "EN / IT" }
+    },
+    "timeline": {
+      "m1": { "year": "2019", "title": "System Engineer" },
+      "m2": { "year": "2022", "title": "KI & Automatisierung" },
+      "m3": { "year": "2024", "title": "Freelance auf Upwork" }
+    },
+    "downloadCV": "Lebenslauf herunterladen"
   },
   "contact": {
-    "headline": "Bereit, dein Geschäft zu wachsen?",
-    "description": "Schreib mir und ich antworte innerhalb von 24 Stunden. Ein kurzes Gespräch hilft uns zu verstehen, ob ich dir helfen kann.",
+    "headline": "Bereit, etwas Großartiges zu bauen?",
+    "description": "Schick mir eine Nachricht auf Upwork oder nutze das Formular unten — ich antworte innerhalb von 24 Stunden.",
+    "email": "marco.mongelli@outlook.it",
+    "callCta": "Nachricht auf Upwork →",
+    "projectType": {
+      "label": "Projekttyp",
+      "placeholder": "Projekttyp auswählen",
+      "web": "Web App / Full Stack",
+      "ai": "KI & Automatisierung",
+      "consulting": "Beratung",
+      "other": "Sonstiges"
+    },
+    "trust": {
+      "response": "Antwort innerhalb 24h",
+      "freeCall": "Kostenloses Erstgespräch",
+      "noCommitment": "Keine Verpflichtung"
+    },
     "form": {
       "namePlaceholder": "Dein Name",
       "emailPlaceholder": "Deine E-Mail",
@@ -126,10 +187,18 @@
     },
     "success": {
       "title": "Danke!",
-      "message": "Ich habe deine Nachricht erhalten und werde mich so schnell wie möglich bei dir melden."
+      "message": "Ich habe deine Nachricht erhalten und werde mich innerhalb von 24 Stunden bei dir melden."
     }
   },
   "footer": {
-    "copyright": "Mit ❤️ im Tessin gemacht"
-  }
+    "copyright": "Marco — Full Stack & AI Freelancer",
+    "tagline": "Web-Apps und KI-Pipelines für Startups weltweit.",
+    "sitemapTitle": "Sitemap",
+    "connectTitle": "Verbinden",
+    "privacy": "Datenschutzrichtlinie"
+  },
+  "hero.socialProof.experience": "5+ Jahre Erfahrung",
+  "hero.socialProof.projects": "20+ Projekte geliefert",
+  "hero.socialProof.location": "Weltweit verfügbar über Upwork",
+  "hero.scrollIndicator": "Scrollen"
 }

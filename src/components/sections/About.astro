@@ -7,9 +7,15 @@
       {/* Photo */}
       <div class="flex-shrink-0">
         <div class="relative">
+          {/* Decorative dotted pattern */}
+          <div
+            class="absolute -inset-4 rounded-[28px] -z-20 opacity-40 dark:opacity-30"
+            style="background-image: radial-gradient(circle, rgb(99 102 241 / 0.5) 1.5px, transparent 1.5px); background-size: 10px 10px;"
+          />
+
           <div class="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-2xl overflow-hidden shadow-2xl bg-slate-200 dark:bg-slate-700 ring-4 ring-white dark:ring-slate-700">
-            <img 
-              src="/assets/photo-about.jpg" 
+            <img
+              src="/assets/photo-about.png"
               alt="Marco - Sviluppatore Web e Automazione"
               class="w-full h-full object-cover"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
@@ -18,17 +24,38 @@
               <span class="text-5xl sm:text-6xl font-bold text-white">M</span>
             </div>
           </div>
+
           {/* Decorative element */}
           <div class="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-2xl -z-10 opacity-70 dark:opacity-60"></div>
         </div>
       </div>
-      
+
       {/* Content */}
       <div class="flex-1 text-center md:text-left">
+        {/* Quick facts — light pills with icons */}
+        <div class="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-3 mb-8">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white dark:bg-slate-700/40 border border-slate-200 dark:border-slate-600 text-sm text-slate-700 dark:text-slate-200 font-medium">
+            <svg class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span data-i18n="about.stats.experience.label">System Engineer</span>
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white dark:bg-slate-700/40 border border-slate-200 dark:border-slate-600 text-sm text-slate-700 dark:text-slate-200 font-medium">
+            <svg class="w-4 h-4 text-cyan-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/></svg>
+            <span data-i18n="about.stats.projects.label">AI & Automation</span>
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white dark:bg-slate-700/40 border border-slate-200 dark:border-slate-600 text-sm text-slate-700 dark:text-slate-200 font-medium">
+            <svg class="w-4 h-4 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span data-i18n="about.stats.clients.label">Freelance</span>
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white dark:bg-slate-700/40 border border-slate-200 dark:border-slate-600 text-sm text-slate-700 dark:text-slate-200 font-medium">
+            <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span data-i18n="about.stats.languages.label">IT / EN</span>
+          </span>
+        </div>
+
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6" data-i18n="about.headline">
           Ciao, sono Marco
         </h2>
-        
+
         <div class="space-y-4 text-slate-600 dark:text-slate-200 leading-relaxed mb-8" data-i18n-paragraphs="about.paragraphs">
           <p data-i18n-item>
             Sviluppo siti web e sistemi di automazione per piccole imprese che vogliono crescere online senza complicazioni. Dopo anni di esperienza nel settore digitale, ho scelto di specializzarmi in quello che so fare meglio: creare strumenti digitali che funzionano, senza fronzoli inutili.
@@ -37,12 +64,44 @@
             Credo nella semplicità e nella trasparenza. Non vendo soluzioni complicate — costruisco strumenti che risolvono problemi reali. Il mio approccio è diretto: ascolto, capisco, costruisco. Niente tecnicismi, niente promesse impossibili. Solo risultati concreti.
           </p>
           <p data-i18n-item>
-            Sono basato in Ticino e lavoro principalmente con clienti in Svizzera italiana e in tutta la Svizzera. Parlo italiano, tedesco e inglese — e so quanto sia importante comunicare nella lingua del cliente.
+            I work async-first, which means I fit naturally into remote teams across any timezone. Whether you need a full MVP, a new feature, or an automation that saves your team hours every week — I'm here to help.
           </p>
         </div>
-        
+
+        {/* Timeline */}
+        <div class="relative mb-8">
+          {/* Desktop connecting line */}
+          <div class="absolute top-4 left-0 right-0 h-px bg-slate-200 dark:bg-slate-600 hidden md:block"></div>
+          {/* Mobile connecting line */}
+          <div class="absolute top-0 bottom-0 left-3 w-px bg-slate-200 dark:bg-slate-600 md:hidden"></div>
+
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-4 relative z-10">
+            <div class="flex items-start md:flex-col md:items-center gap-3 md:gap-2">
+              <div class="w-6 h-6 rounded-full bg-indigo-500 ring-4 ring-slate-50 dark:ring-slate-800/50 flex-shrink-0"></div>
+              <div class="text-left md:text-center">
+                <div class="text-sm font-bold text-slate-900 dark:text-white" data-i18n="about.timeline.m1.year">2019</div>
+                <div class="text-xs text-slate-600 dark:text-slate-300" data-i18n="about.timeline.m1.title">System Engineer</div>
+              </div>
+            </div>
+            <div class="flex items-start md:flex-col md:items-center gap-3 md:gap-2">
+              <div class="w-6 h-6 rounded-full bg-indigo-500 ring-4 ring-slate-50 dark:ring-slate-800/50 flex-shrink-0"></div>
+              <div class="text-left md:text-center">
+                <div class="text-sm font-bold text-slate-900 dark:text-white" data-i18n="about.timeline.m2.year">2022</div>
+                <div class="text-xs text-slate-600 dark:text-slate-300" data-i18n="about.timeline.m2.title">Studi AI</div>
+              </div>
+            </div>
+            <div class="flex items-start md:flex-col md:items-center gap-3 md:gap-2">
+              <div class="w-6 h-6 rounded-full bg-indigo-500 ring-4 ring-slate-50 dark:ring-slate-800/50 flex-shrink-0"></div>
+              <div class="text-left md:text-center">
+                <div class="text-sm font-bold text-slate-900 dark:text-white" data-i18n="about.timeline.m3.year">2026</div>
+                <div class="text-xs text-slate-600 dark:text-slate-300" data-i18n="about.timeline.m3.title">Freelance on Upwork</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Skills */}
-        <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+        <div class="flex flex-wrap gap-2 justify-center md:justify-start mb-6">
           <span class="px-3 sm:px-4 py-2 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium border border-slate-200 dark:border-slate-600">Web Development</span>
           <span class="px-3 sm:px-4 py-2 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium border border-slate-200 dark:border-slate-600">AI & Automation</span>
           <span class="px-3 sm:px-4 py-2 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium border border-slate-200 dark:border-slate-600">Python</span>
@@ -50,24 +109,44 @@
           <span class="px-3 sm:px-4 py-2 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium border border-slate-200 dark:border-slate-600">n8n</span>
           <span class="px-3 sm:px-4 py-2 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium border border-slate-200 dark:border-slate-600">FastAPI</span>
         </div>
+
+        {/* CV Button */}
+        <a
+          href="#contact"
+          class="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full shadow-md hover:shadow-lg transition-shadow"
+          data-i18n="about.downloadCV"
+        >
+          Scarica CV
+        </a>
       </div>
     </div>
   </div>
 </section>
 
 <script>
-  // Handle paragraph translations
-  function updateParagraphTranslations(translations: Record<string, unknown>) {
+  function getTranslationValue(translations: Record<string, unknown>, key: string): unknown {
+    return key.split('.').reduce<unknown>((current, k) => {
+      if (current === null || current === undefined) return undefined;
+      return (current as Record<string, unknown>)[k];
+    }, translations);
+  }
+
+  function updateAllTranslations(translations: Record<string, unknown>) {
+    // Update single text elements
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      if (!key || !translations) return;
+      const value = getTranslationValue(translations, key);
+      if (typeof value === 'string') {
+        el.textContent = value;
+      }
+    });
+
+    // Update paragraph containers
     document.querySelectorAll('[data-i18n-paragraphs]').forEach((container) => {
       const key = container.getAttribute('data-i18n-paragraphs');
       if (!key || !translations) return;
-      
-      // Get array from translations using dot notation
-      const value = key.split('.').reduce<unknown>((current, k) => {
-        if (current === null || current === undefined) return undefined;
-        return (current as Record<string, unknown>)[k];
-      }, translations);
-      
+      const value = getTranslationValue(translations, key);
       if (Array.isArray(value)) {
         const items = container.querySelectorAll('[data-i18n-item]');
         items.forEach((item, index) => {
@@ -78,19 +157,18 @@
       }
     });
   }
-  
-  // Listen for i18n events
+
   window.addEventListener('i18n:ready', (e: Event) => {
     const customEvent = e as CustomEvent;
     if (customEvent.detail?.translations) {
-      updateParagraphTranslations(customEvent.detail.translations);
+      updateAllTranslations(customEvent.detail.translations);
     }
   });
-  
+
   window.addEventListener('i18n:languageChanged', (e: Event) => {
     const customEvent = e as CustomEvent;
     if (customEvent.detail?.translations) {
-      updateParagraphTranslations(customEvent.detail.translations);
+      updateAllTranslations(customEvent.detail.translations);
     }
   });
 </script>
