@@ -27,19 +27,43 @@ import Button from '@/components/ui/Button.astro';
         <p class="hero-fade-in inline-block px-4 py-2 rounded-full bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 text-sm font-semibold tracking-widest uppercase mb-6" data-i18n="hero.label">
           Full Stack Developer & AI Automation Engineer
         </p>
-        <h1 class="hero-fade-in hero-fade-in-delay-1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-6 leading-tight" data-i18n="hero.headline">
-          Il tuo sito web <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">moderno</span>, pronto in giorni — non mesi
+        <h1 class="hero-fade-in hero-fade-in-delay-1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
+          <span data-i18n="hero.headline">Siti web moderni, pronti in giorni — non mesi</span>
         </h1>
         <p class="hero-fade-in hero-fade-in-delay-2 text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-[540px] mx-auto lg:mx-0 mb-8" data-i18n="hero.subheadline">
-          Aiuto piccole imprese e professionisti a crescere online con siti web veloci e sistemi che automatizzano il lavoro ripetitivo. Basato in Ticino, lavoro con clienti in tutta la Svizzera.
+          Freelance developer on Upwork — I help startup and SaaS teams ship full-stack web apps and AI automation workflows, fast and production-ready.
         </p>
         <div class="hero-fade-in hero-fade-in-delay-3 hero-btns flex flex-wrap gap-4 justify-center lg:justify-start">
           <Button href="#contact" variant="primary">
-            <span data-i18n="hero.ctaPrimary">Parliamo del tuo progetto</span> →
+            <span data-i18n="hero.ctaPrimary">Parliamo del tuo progetto</span>
           </Button>
           <Button href="#work" variant="outline">
-            <span data-i18n="hero.ctaSecondary">Vedi i miei lavori</span> ↓
+            <span data-i18n="hero.ctaSecondary">Vedi i miei lavori</span>
           </Button>
+        </div>
+
+        {/* Social proof badges */}
+        <div class="hero-fade-in hero-fade-in-delay-3 mt-6 flex flex-wrap gap-3 justify-center lg:justify-start">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-indigo-50/80 dark:bg-indigo-900/20 text-indigo-700 dark:text-indigo-300 text-xs font-medium border border-indigo-100 dark:border-indigo-800/50">
+            <svg class="w-3.5 h-3.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span data-i18n="hero.socialProof.location">Available worldwide via Upwork</span>
+          </div>
+          <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-cyan-50/80 dark:bg-cyan-900/20 text-cyan-700 dark:text-cyan-300 text-xs font-medium border border-cyan-100 dark:border-cyan-800/50">
+            <svg class="w-3.5 h-3.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            <span data-i18n="hero.socialProof.focus">AI & Web</span>
+          </div>
+          <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-100/80 dark:bg-slate-800/60 text-slate-700 dark:text-slate-300 text-xs font-medium border border-slate-200 dark:border-slate-700">
+            <svg class="w-3.5 h-3.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="2" y1="20" x2="22" y2="20"></line>
+            </svg>
+            <span data-i18n="hero.socialProof.status">Freelance</span>
+          </div>
         </div>
       </div>
       
@@ -134,6 +158,18 @@ import Button from '@/components/ui/Button.astro';
       </div>
     </div>
   </div>
+
+  {/* Scroll-down indicator */}
+  <a 
+    href="#work" 
+    class="scroll-indicator absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors"
+    aria-label="Scorri per esplorare"
+  >
+    <span class="text-[10px] uppercase tracking-widest font-medium" data-i18n="hero.scrollIndicator">Scorri</span>
+    <svg class="w-5 h-5 scroll-indicator-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </a>
 </section>
 
 <style>
@@ -234,6 +270,20 @@ import Button from '@/components/ui/Button.astro';
       transform: translateY(0);
     }
   }
+
+  /* Scroll indicator bounce */
+  .scroll-indicator-chevron {
+    animation: bounce-chevron 2s ease-in-out infinite;
+  }
+
+  @keyframes bounce-chevron {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+  }
   
   /* Apply animations */
   .hero-blob-1 {
@@ -320,6 +370,10 @@ import Button from '@/components/ui/Button.astro';
     
     .hero-fade-in {
       opacity: 1;
+      animation: none;
+    }
+
+    .scroll-indicator-chevron {
       animation: none;
     }
   }

@@ -1,4 +1,5 @@
 ---
+import Button from '@/components/ui/Button.astro';
 ---
 
 <section id="services" class="py-20 px-[6%] bg-white dark:bg-slate-900">
@@ -19,16 +20,21 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
       
       {/* Card Grande: Sviluppo Web (sinistra, span 2 righe) */}
-      <div class="group md:row-span-2 bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-800/80 rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-500 transition-all duration-300 flex flex-col relative overflow-hidden">
+      <div class="group md:row-span-2 bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-800/80 rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-indigo-300 dark:hover:border-indigo-500 hover:-translate-y-1 transition-all duration-300 flex flex-col relative overflow-hidden">
         <div class="absolute top-0 right-0 p-6 opacity-10 dark:opacity-15 group-hover:opacity-20 dark:group-hover:opacity-25 transition-opacity">
           <svg class="w-32 h-32 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
           </svg>
         </div>
         
-        <span class="inline-block px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs font-semibold uppercase tracking-wider mb-4 w-fit" data-i18n="services.web.tag">
-          Sviluppo Web
-        </span>
+        <div class="flex items-start justify-between gap-4 mb-4">
+          <span class="inline-block px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs font-semibold uppercase tracking-wider w-fit" data-i18n="services.web.tag">
+            Sviluppo Web
+          </span>
+          <span class="inline-block px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold w-fit shrink-0" data-i18n="services.web.price">
+            From $2,500
+          </span>
+        </div>
         
         <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-4" data-i18n="services.web.title">
           Siti web che convertono visitatori in clienti
@@ -39,73 +45,155 @@
         </p>
         
         <ul class="space-y-3 flex-grow" data-i18n-list="services.web.features">
-          <li class="flex items-start gap-3">
+          <li class="flex items-start gap-3" data-i18n-item>
             <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
             </svg>
             <span class="text-slate-700 dark:text-slate-200">Design responsive: perfetto su telefono, tablet e computer</span>
           </li>
-          <li class="flex items-start gap-3">
+          <li class="flex items-start gap-3" data-i18n-item>
             <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
             </svg>
             <span class="text-slate-700 dark:text-slate-200">Velocità ottimizzata: caricamento in meno di 3 secondi</span>
           </li>
-          <li class="flex items-start gap-3">
+          <li class="flex items-start gap-3" data-i18n-item>
             <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
             </svg>
             <span class="text-slate-700 dark:text-slate-200">SEO di base: i tuoi clienti ti trovano su Google</span>
           </li>
-          <li class="flex items-start gap-3">
+          <li class="flex items-start gap-3" data-i18n-item>
             <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
             </svg>
             <span class="text-slate-700 dark:text-slate-200">CMS incluso: aggiorna contenuti in autonomia</span>
           </li>
         </ul>
+
+        <div class="mt-6">
+          <Button href="#contact" variant="outline" size="sm" class="w-full sm:w-auto">
+            <span data-i18n="services.cta">Ne parliamo →</span>
+          </Button>
+        </div>
       </div>
       
       {/* Card Piccola: Automazione AI (destra, riga 1) */}
-      <div class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-500 transition-all duration-300 flex flex-col relative overflow-hidden">
+      <div class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-indigo-300 dark:hover:border-indigo-500 hover:-translate-y-1 transition-all duration-300 flex flex-col relative overflow-hidden">
         <div class="absolute top-0 right-0 p-4 opacity-10 dark:opacity-15 group-hover:opacity-20 dark:group-hover:opacity-25 transition-opacity">
           <svg class="w-20 h-20 text-cyan-600 dark:text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z"/>
           </svg>
         </div>
         
-        <span class="inline-block px-3 py-1 rounded-full bg-cyan-100 dark:bg-cyan-900/50 text-cyan-700 dark:text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-3 w-fit" data-i18n="services.automation.tag">
-          Automazione AI
-        </span>
+        <div class="flex items-start justify-between gap-4 mb-3">
+          <span class="inline-block px-3 py-1 rounded-full bg-cyan-100 dark:bg-cyan-900/50 text-cyan-700 dark:text-cyan-300 text-xs font-semibold uppercase tracking-wider w-fit" data-i18n="services.automation.tag">
+            Automazione AI
+          </span>
+          <span class="inline-block px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold w-fit shrink-0" data-i18n="services.automation.price">
+            From $1,500
+          </span>
+        </div>
         
         <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2" data-i18n="services.automation.title">
           Lascia che l'IA faccia il lavoro ripetitivo
         </h3>
         
-        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-grow" data-i18n="services.automation.description">
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4" data-i18n="services.automation.description">
           Connetto i tuoi strumenti e automatizzo i flussi di lavoro. Risparmi tempo, riduci errori.
         </p>
+        
+        <ul class="space-y-2 flex-grow text-sm" data-i18n-list="services.automation.features">
+          <li class="flex items-start gap-2" data-i18n-item>
+            <svg class="w-4 h-4 text-cyan-600 dark:text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-slate-700 dark:text-slate-200">Integrazione strumenti</span>
+          </li>
+          <li class="flex items-start gap-2" data-i18n-item>
+            <svg class="w-4 h-4 text-cyan-600 dark:text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-slate-700 dark:text-slate-200">Workflow automatici</span>
+          </li>
+          <li class="flex items-start gap-2" data-i18n-item>
+            <svg class="w-4 h-4 text-cyan-600 dark:text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-slate-700 dark:text-slate-200">Assistenti AI 24/7</span>
+          </li>
+          <li class="flex items-start gap-2" data-i18n-item>
+            <svg class="w-4 h-4 text-cyan-600 dark:text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-slate-700 dark:text-slate-200">Report automatici</span>
+          </li>
+        </ul>
+
+        <div class="mt-6">
+          <Button href="#contact" variant="outline" size="sm" class="w-full sm:w-auto">
+            <span data-i18n="services.cta">Ne parliamo →</span>
+          </Button>
+        </div>
       </div>
       
       {/* Card Piccola: Consulenza (sinistra, riga 2 - in mobile dopo Sviluppo Web) */}
-      <div class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-500 transition-all duration-300 flex flex-col relative overflow-hidden">
+      <div class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-indigo-300 dark:hover:border-indigo-500 hover:-translate-y-1 transition-all duration-300 flex flex-col relative overflow-hidden">
         <div class="absolute top-0 right-0 p-4 opacity-10 dark:opacity-15 group-hover:opacity-20 dark:group-hover:opacity-25 transition-opacity">
           <svg class="w-20 h-20 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
           </svg>
         </div>
         
-        <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-3 w-fit" data-i18n="services.consulting.tag">
-          Consulenza
-        </span>
+        <div class="flex items-start justify-between gap-4 mb-3">
+          <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 text-xs font-semibold uppercase tracking-wider w-fit" data-i18n="services.consulting.tag">
+            Consulenza
+          </span>
+          <span class="inline-block px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold w-fit shrink-0" data-i18n="services.consulting.price">
+            Su richiesta
+          </span>
+        </div>
         
         <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2" data-i18n="services.consulting.title">
           Strategia tecnologica su misura
         </h3>
         
-        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-grow" data-i18n="services.consulting.description">
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4" data-i18n="services.consulting.description">
           Analisi delle tue esigenze e piano d'azione concreto per digitalizzare il tuo business.
         </p>
+        
+        <ul class="space-y-2 flex-grow text-sm" data-i18n-list="services.consulting.features">
+          <li class="flex items-start gap-2" data-i18n-item>
+            <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-slate-700 dark:text-slate-200">Analisi business</span>
+          </li>
+          <li class="flex items-start gap-2" data-i18n-item>
+            <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-slate-700 dark:text-slate-200">Piano tecnologico</span>
+          </li>
+          <li class="flex items-start gap-2" data-i18n-item>
+            <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-slate-700 dark:text-slate-200">Scelta strumenti giusti</span>
+          </li>
+          <li class="flex items-start gap-2" data-i18n-item>
+            <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+            </svg>
+            <span class="text-slate-700 dark:text-slate-200">Supporto implementation</span>
+          </li>
+        </ul>
+
+        <div class="mt-6">
+          <Button href="#contact" variant="outline" size="sm" class="w-full sm:w-auto">
+            <span data-i18n="services.cta">Ne parliamo →</span>
+          </Button>
+        </div>
       </div>
       
     </div>
