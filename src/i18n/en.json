@@ -221,5 +221,8 @@
   "hero.socialProof.experience": "5+ years of experience",
   "hero.socialProof.projects": "20+ projects shipped",
   "hero.socialProof.location": "Available worldwide via Upwork",
-  "hero.scrollIndicator": "Scroll"
+  "hero.socialProof.focus": "AI & Web",
+  "hero.socialProof.status": "Freelance",
+  "hero.scrollIndicator": "Scroll",
+  "hero.subheadline": "Freelance developer on Upwork — I help startup and SaaS teams ship full-stack web apps and AI automation workflows, fast and production-ready."
 }
