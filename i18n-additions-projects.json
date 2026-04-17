@@ -1,0 +1,38 @@
+{
+  "it": {
+    "projects": {
+      "items": {
+        "leadspark": {
+          "title": "LeadSpark",
+          "description": "Piattaforma completa per cattura, qualifica e gestione lead. Automazione follow-up, scoring e integrazione CRM.",
+          "cta": "Vedi progetto →"
+        },
+        "analyticsdashboard": {
+          "title": "Analytics Dashboard",
+          "description": "Dashboard intelligente per visualizzare KPI, trend e report automatici generati con AI.",
+          "cta": "Vedi progetto →"
+        }
+      },
+      "github": "GitHub",
+      "liveDemo": "Live demo"
+    }
+  },
+  "en": {
+    "projects": {
+      "items": {
+        "leadspark": {
+          "title": "LeadSpark",
+          "description": "Complete platform for lead capture, qualification, and management. Automated follow-up, scoring, and CRM integration.",
+          "cta": "View project →"
+        },
+        "analyticsdashboard": {
+          "title": "Analytics Dashboard",
+          "description": "Intelligent dashboard for visualizing KPIs, trends, and AI-generated automatic reports.",
+          "cta": "View project →"
+        }
+      },
+      "github": "GitHub",
+      "liveDemo": "Live demo"
+    }
+  }
+}

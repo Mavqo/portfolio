@@ -1,0 +1,32 @@
+{
+  "it": {
+    "process": {
+      "steps": {
+        "1": {
+          "duration": "30 minuti"
+        },
+        "2": {
+          "duration": "1-2 settimane"
+        },
+        "3": {
+          "duration": "Supporto continuo"
+        }
+      }
+    }
+  },
+  "en": {
+    "process": {
+      "steps": {
+        "1": {
+          "duration": "30 minutes"
+        },
+        "2": {
+          "duration": "1-2 weeks"
+        },
+        "3": {
+          "duration": "Ongoing support"
+        }
+      }
+    }
+  }
+}

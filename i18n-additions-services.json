@@ -1,0 +1,54 @@
+{
+  "it": {
+    "services": {
+      "web": {
+        "price": "Da CHF 2'500"
+      },
+      "automation": {
+        "price": "Da CHF 1'200",
+        "features": [
+          "Integrazione strumenti",
+          "Workflow automatici",
+          "Assistenti AI 24/7",
+          "Report automatici"
+        ]
+      },
+      "consulting": {
+        "price": "Su richiesta",
+        "features": [
+          "Analisi business",
+          "Piano tecnologico",
+          "Scelta strumenti giusti",
+          "Supporto implementation"
+        ]
+      },
+      "cta": "Ne parliamo →"
+    }
+  },
+  "en": {
+    "services": {
+      "web": {
+        "price": "From CHF 2,500"
+      },
+      "automation": {
+        "price": "From CHF 1,200",
+        "features": [
+          "Tool integration",
+          "Automatic workflows",
+          "AI assistants 24/7",
+          "Automatic reports"
+        ]
+      },
+      "consulting": {
+        "price": "On request",
+        "features": [
+          "Business analysis",
+          "Technology plan",
+          "Choosing the right tools",
+          "Implementation support"
+        ]
+      },
+      "cta": "Let's talk →"
+    }
+  }
+}

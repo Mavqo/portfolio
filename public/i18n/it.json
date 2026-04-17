@@ -39,8 +39,8 @@
   },
   "services": {
     "label": "Cosa faccio",
-    "headline": "Due servizi. Risultati concreti.",
-    "description": "Focalizzato su ciò che fa davvero la differenza per le piccole imprese",
+    "headline": "Quattro servizi. Risultati concreti.",
+    "description": "Per le piccole imprese che non hanno tempo da perdere.",
     "web": {
       "tag": "Sviluppo Web",
       "title": "Siti web che convertono visitatori in clienti",
@@ -72,11 +72,16 @@
       "tag": "Tech Stack",
       "title": "Tecnologie moderne e affidabili",
       "description": "Uso solo tecnologie collaudate che garantiscono prestazioni, sicurezza e scalabilità nel tempo."
+    },
+    "ios": {
+      "tag": "App iOS Native",
+      "title": "App iPhone su misura, che funzionano davvero",
+      "description": "Progetto e realizzo app per iPhone su misura per il tuo business. Dalla prima bozza all’App Store, gestisco tutto il processo così puoi arrivare direttamente ai tuoi clienti da mobile."
     }
   },
   "process": {
     "label": "Il processo",
-    "headline": "Semplice. Veloce. Nessuna sorpresa.",
+    "headline": "Un processo lineare, senza fronzoli.",
     "description": "Dal primo messaggio al prodotto live — ecco come lavoriamo insieme",
     "steps": {
       "1": {
@@ -105,11 +110,20 @@
       },
       "crm": {
         "title": "CRM Automation",
-        "description": "Sistema di automazione per gestione lead e follow-up automatici."
+        "description": "Workflow n8n: un form attiva scoring lead, pipeline di follow-up automatici e una sequenza email in 3 step. Nessun abbonamento CRM.",
+        "cta": "Vedi demo →"
       },
       "dashboard": {
         "title": "Dashboard Analytics",
-        "description": "Visualizzazione dati e report automatici per piccole imprese."
+        "description": "Dashboard Python + Plotly per vendite, spese e metriche operative su più clienti. Report PDF settimanale aggiornato in automatico.",
+        "cta": "Vedi demo →"
+      },
+      "jobsite": {
+        "tag": "Progetto dimostrativo",
+        "title": "Checklist Cantiere + Foto di Lavoro",
+        "subtitle": "Demo iOS nativa per imprenditori artigiani che hanno bisogno di registri puliti, veloci.",
+        "description": "Lista dei lavori del giorno, checklist per ogni cantiere con cronologia foto, foto geolocalizzate e condivisione PDF con un tocco.",
+        "cta": "Vedi su GitHub →"
       }
     },
     "comingSoon": "In arrivo"
@@ -123,7 +137,7 @@
     ]
   },
   "contact": {
-    "headline": "Pronto a far crescere il tuo business?",
+    "headline": "Scrivimi e parliamo del tuo progetto",
     "description": "Scrivimi e rispondo entro 24 ore. Una breve chiacchierata ci aiuta a capire se posso aiutarti.",
     "form": {
       "namePlaceholder": "Il tuo nome",

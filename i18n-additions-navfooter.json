@@ -1,0 +1,18 @@
+{
+  "it": {
+    "footer": {
+      "tagline": "Siti web veloci e automazione AI per piccole imprese.",
+      "sitemapTitle": "Sitemap",
+      "connectTitle": "Connettiti",
+      "privacy": "Privacy Policy"
+    }
+  },
+  "en": {
+    "footer": {
+      "tagline": "Fast websites and AI automation for small businesses.",
+      "sitemapTitle": "Sitemap",
+      "connectTitle": "Connect",
+      "privacy": "Privacy Policy"
+    }
+  }
+}

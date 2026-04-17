@@ -1,0 +1,52 @@
+{
+  "it": {
+    "problems": {
+      "solutionLabel": "Soluzione",
+      "cards": {
+        "website": {
+          "solution": {
+            "title": "Siti moderni e veloci",
+            "description": "Realizzo siti web responsive, ottimizzati per ogni dispositivo, che trasmettono professionalità e fiducia fin dal primo click."
+          }
+        },
+        "time": {
+          "solution": {
+            "title": "Automazione intelligente",
+            "description": "Analizzo i tuoi processi e creo flussi automatici che eliminano le attività ripetitive, restituendoti ore preziose ogni settimana."
+          }
+        },
+        "tech": {
+          "solution": {
+            "title": "Strumenti semplici e connessi",
+            "description": "Scelgo e integro solo le tecnologie giuste per te, spiegando tutto in modo chiaro. Nessuna complessità inutile, solo strumenti che funzionano."
+          }
+        }
+      }
+    }
+  },
+  "en": {
+    "problems": {
+      "solutionLabel": "Solution",
+      "cards": {
+        "website": {
+          "solution": {
+            "title": "Modern, fast websites",
+            "description": "I build responsive, device-optimized websites that convey professionalism and trust from the very first click."
+          }
+        },
+        "time": {
+          "solution": {
+            "title": "Smart automation",
+            "description": "I analyze your processes and build automatic workflows that eliminate repetitive tasks, giving you back precious hours every week."
+          }
+        },
+        "tech": {
+          "solution": {
+            "title": "Simple, connected tools",
+            "description": "I choose and integrate only the right technologies for you, explaining everything clearly. No unnecessary complexity, just tools that work."
+          }
+        }
+      }
+    }
+  }
+}

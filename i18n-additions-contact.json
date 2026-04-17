@@ -1,0 +1,26 @@
+{
+  "it": {
+    "contact.callCta": "Preferisci una call? Prenota gratuitamente →",
+    "contact.projectType.label": "Tipo di progetto",
+    "contact.projectType.placeholder": "Seleziona il tipo di progetto",
+    "contact.projectType.web": "Sito web",
+    "contact.projectType.ai": "Automazione AI",
+    "contact.projectType.consulting": "Consulenza",
+    "contact.projectType.other": "Altro",
+    "contact.trust.response": "Risposta entro 24h",
+    "contact.trust.freeCall": "Prima call gratuita",
+    "contact.trust.noCommitment": "Nessun impegno"
+  },
+  "en": {
+    "contact.callCta": "Prefer a call? Book for free →",
+    "contact.projectType.label": "Project type",
+    "contact.projectType.placeholder": "Select project type",
+    "contact.projectType.web": "Website",
+    "contact.projectType.ai": "AI Automation",
+    "contact.projectType.consulting": "Consulting",
+    "contact.projectType.other": "Other",
+    "contact.trust.response": "Reply within 24h",
+    "contact.trust.freeCall": "First call free",
+    "contact.trust.noCommitment": "No commitment"
+  }
+}

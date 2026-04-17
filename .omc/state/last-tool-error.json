@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"mv .github /tmp/portfolio-github-backup-2 && git pull origin main --no-rebase 2>&1 && git stash pop 2>&1\",\"timeout\":60000,\"description\":\"Move .github away, pull, restore stash\"}",
+  "error": "Exit code 1\nFrom https://github.com/Mavqo/portfolio\n * branch            main       -> FETCH_HEAD\nAuto-merging astro.config.mjs\nAuto-merging src/components/layout/Navigation.astro\nCONFLICT (content): Merge conflict in src/components/layout/Navigation.astro\nAuto-merging src/components/sections/About.astro\nCONFLICT (content): Merge conflict in src/components/sections/About.astro\nAuto-merging src/components/sections/Contact.astro\nCONFLICT (content): Merge conflict in src/components/sections/Contact...",
+  "timestamp": "2026-04-17T05:22:42.269Z",
+  "retry_count": 6
+}

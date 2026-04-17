@@ -1,0 +1,310 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1776402891066,
+  "projectRoot": "/Users/marco/Documents/AIProjects/Portfolio/portfolio",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": ">=22.12.0",
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "astro",
+        "version": "4.15.0",
+        "category": "fullstack"
+      },
+      {
+        "name": "playwright",
+        "version": "1.59.1",
+        "category": "testing"
+      }
+    ],
+    "packageManager": "pnpm",
+    "runtime": "Node.js 22.12.0"
+  },
+  "build": {
+    "buildCommand": "pnpm build",
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": "pnpm dev",
+    "scripts": {
+      "dev": "astro dev",
+      "build": "astro build",
+      "preview": "astro preview",
+      "verify:deploy": "bash scripts/verify-post-deploy.sh",
+      "astro": "astro"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": "*.spec.ts",
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs",
+      "public",
+      "scripts",
+      "src",
+      "tests"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "Old Context": {
+      "path": "Old Context",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1776402890724,
+      "keyFiles": []
+    },
+    "audit": {
+      "path": "audit",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1776402890731,
+      "keyFiles": [
+        "README.md"
+      ]
+    },
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 4,
+      "lastAccessed": 1776402890731,
+      "keyFiles": [
+        "favicon.ico",
+        "favicon.svg",
+        "index.html"
+      ]
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 10,
+      "lastAccessed": 1776402890732,
+      "keyFiles": [
+        "copy-about.md",
+        "copy-contact.md",
+        "copy-hero.md",
+        "copy-problems.md",
+        "copy-process.md"
+      ]
+    },
+    "offers": {
+      "path": "offers",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1776402890733,
+      "keyFiles": [
+        "README.md"
+      ]
+    },
+    "ops": {
+      "path": "ops",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1776402890734,
+      "keyFiles": []
+    },
+    "playwright-report": {
+      "path": "playwright-report",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1776402890735,
+      "keyFiles": [
+        "index.html"
+      ]
+    },
+    "pricing": {
+      "path": "pricing",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1776402890735,
+      "keyFiles": [
+        "README.md"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 4,
+      "lastAccessed": 1776402890735,
+      "keyFiles": [
+        "favicon.ico",
+        "favicon.svg",
+        "robots.txt"
+      ]
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 1,
+      "lastAccessed": 1776402890736,
+      "keyFiles": [
+        "verify-post-deploy.sh"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 1,
+      "lastAccessed": 1776402890737,
+      "keyFiles": [
+        "env.d.ts"
+      ]
+    },
+    "test-results": {
+      "path": "test-results",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1776402890738,
+      "keyFiles": []
+    },
+    "tests": {
+      "path": "tests",
+      "purpose": "Test files",
+      "fileCount": 1,
+      "lastAccessed": 1776402890738,
+      "keyFiles": [
+        "homepage.spec.ts"
+      ]
+    },
+    "upwork": {
+      "path": "upwork",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1776402890738,
+      "keyFiles": [
+        "README.md"
+      ]
+    },
+    "dist/assets": {
+      "path": "dist/assets",
+      "purpose": "Static assets",
+      "fileCount": 3,
+      "lastAccessed": 1776402890740,
+      "keyFiles": [
+        "photo-about.png",
+        "photo-light.jpg"
+      ]
+    },
+    "playwright-report/data": {
+      "path": "playwright-report/data",
+      "purpose": "Data files",
+      "fileCount": 4,
+      "lastAccessed": 1776402890740,
+      "keyFiles": [
+        "2878b0fcc2c002b0fee73374006fa330e0281bdc.md",
+        "5b2c400100c10c8d6991f1b328f1a9fa76da6289.md",
+        "89c2014f768e1451b46a3c8601e1c9279c22d3f6.md"
+      ]
+    },
+    "public/assets": {
+      "path": "public/assets",
+      "purpose": "Static assets",
+      "fileCount": 3,
+      "lastAccessed": 1776402890741,
+      "keyFiles": [
+        "photo-about.png",
+        "photo-light.jpg"
+      ]
+    },
+    "src/components": {
+      "path": "src/components",
+      "purpose": "UI components",
+      "fileCount": 0,
+      "lastAccessed": 1776402890742,
+      "keyFiles": []
+    },
+    "src/lib": {
+      "path": "src/lib",
+      "purpose": "Library code",
+      "fileCount": 2,
+      "lastAccessed": 1776402890742,
+      "keyFiles": [
+        "i18n.ts",
+        "utils.ts"
+      ]
+    },
+    "src/pages": {
+      "path": "src/pages",
+      "purpose": "Page components",
+      "fileCount": 2,
+      "lastAccessed": 1776402890743,
+      "keyFiles": [
+        "index.astro",
+        "privacy.astro"
+      ]
+    },
+    "src/scripts": {
+      "path": "src/scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 1,
+      "lastAccessed": 1776402890744,
+      "keyFiles": [
+        "animations.ts"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/components/sections/Projects.astro",
+      "accessCount": 4,
+      "lastAccessed": 1776402943856,
+      "type": "file"
+    },
+    {
+      "path": "src/components/sections/About.astro",
+      "accessCount": 3,
+      "lastAccessed": 1776402935670,
+      "type": "file"
+    },
+    {
+      "path": "src/components/sections/Hero.astro",
+      "accessCount": 3,
+      "lastAccessed": 1776402938958,
+      "type": "file"
+    },
+    {
+      "path": "src/components/sections/Services.astro",
+      "accessCount": 3,
+      "lastAccessed": 1776402941282,
+      "type": "file"
+    },
+    {
+      "path": "src/components/layout/Footer.astro",
+      "accessCount": 2,
+      "lastAccessed": 1776402945202,
+      "type": "file"
+    },
+    {
+      "path": "astro.config.mjs",
+      "accessCount": 1,
+      "lastAccessed": 1776403283580,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

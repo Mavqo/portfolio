@@ -1,0 +1,76 @@
+{
+  "it": {
+    "about": {
+      "stats": {
+        "experience": {
+          "value": "5+",
+          "label": "Anni di esperienza"
+        },
+        "projects": {
+          "value": "20+",
+          "label": "Progetti completati"
+        },
+        "clients": {
+          "value": "100%",
+          "label": "Clienti soddisfatti"
+        },
+        "languages": {
+          "value": "3",
+          "label": "Lingue parlate"
+        }
+      },
+      "timeline": {
+        "m1": {
+          "year": "2019",
+          "title": "Inizio nel digitale"
+        },
+        "m2": {
+          "year": "2022",
+          "title": "Specializzazione AI & Automazione"
+        },
+        "m3": {
+          "year": "2024",
+          "title": "Freelance a Ticino"
+        }
+      },
+      "downloadCV": "Scarica CV"
+    }
+  },
+  "en": {
+    "about": {
+      "stats": {
+        "experience": {
+          "value": "5+",
+          "label": "Years of experience"
+        },
+        "projects": {
+          "value": "20+",
+          "label": "Projects completed"
+        },
+        "clients": {
+          "value": "100%",
+          "label": "Happy clients"
+        },
+        "languages": {
+          "value": "3",
+          "label": "Languages spoken"
+        }
+      },
+      "timeline": {
+        "m1": {
+          "year": "2019",
+          "title": "Started in digital"
+        },
+        "m2": {
+          "year": "2022",
+          "title": "AI & Automation specialization"
+        },
+        "m3": {
+          "year": "2024",
+          "title": "Freelance in Ticino"
+        }
+      },
+      "downloadCV": "Download CV"
+    }
+  }
+}

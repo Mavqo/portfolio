@@ -1,0 +1,14 @@
+{
+  "it": {
+    "hero.socialProof.location": "Basato in Ticino",
+    "hero.socialProof.focus": "AI & Web",
+    "hero.socialProof.status": "Freelance",
+    "hero.scrollIndicator": "Scorri"
+  },
+  "en": {
+    "hero.socialProof.location": "Based in Ticino",
+    "hero.socialProof.focus": "AI & Web",
+    "hero.socialProof.status": "Freelance",
+    "hero.scrollIndicator": "Scroll"
+  }
+}

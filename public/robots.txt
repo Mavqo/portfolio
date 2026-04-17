@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mavqo.dev/sitemap-index.xml
