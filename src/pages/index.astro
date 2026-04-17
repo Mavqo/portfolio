@@ -10,11 +10,39 @@ import About from '@/components/sections/About.astro';
 import Contact from '@/components/sections/Contact.astro';
 ---
 
-<MainLayout 
-  title="Marco — Sviluppatore Web & Automazione AI in Ticino"
-  description="Aiuto piccole imprese a crescere online con siti web veloci e sistemi di automazione AI. Basato in Ticino, lavoro con clienti in tutta la Svizzera."
-  lang="it"
+<MainLayout
+  title="Marco — Full Stack Developer & AI Engineer | Upwork"
+  description="Freelance Full Stack developer and AI automation specialist on Upwork. I help startups and SaaS companies ship faster with modern web apps and intelligent workflows."
+  lang="en"
 >
+  <script slot="head" type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Marco Mongelli",
+      "jobTitle": "Full Stack Developer & AI Engineer",
+      "url": "https://mavqo.dev",
+      "email": "marco.mongelli@outlook.it",
+      "sameAs": [
+        "https://github.com/Mavqo",
+        "https://www.upwork.com/freelancers/~mavqo"
+      ],
+      "knowsAbout": ["React", "Astro", "Next.js", "FastAPI", "Python", "TypeScript", "AI Automation", "n8n", "LangChain", "OpenAI API", "PostgreSQL", "Docker"],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Full Stack Web Development",
+          "description": "Production-ready web applications using React, Astro, Next.js, FastAPI"
+        },
+        {
+          "@type": "Offer",
+          "name": "AI & Automation Pipelines",
+          "description": "n8n workflows, LangChain RAG pipelines, OpenAI API integration"
+        }
+      ]
+    }
+  </script>
+
   <Hero />
   <Problems />
   <Services />
