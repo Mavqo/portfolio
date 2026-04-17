@@ -56,9 +56,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          build-args: |
-            APP_GIT_SHA=${{ github.sha }}
-            APP_BUILD_TIME=${{ github.event.head_commit.timestamp || github.run_id }}
           provenance: false
           tags: |
             ${{ env.IMAGE_LATEST }}
@@ -66,14 +63,8 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      - name: Verify pushed images
-        run: |
-          set -euo pipefail
-          echo "Checking registry for pushed tags..."
-          curl -sf "http://${REGISTRY}/v2/${IMAGE_NAME}/manifests/latest" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" > /dev/null
-          echo "✓ latest tag verified"
-          curl -sf "http://${REGISTRY}/v2/${IMAGE_NAME}/manifests/${GITHUB_SHA}" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" > /dev/null
-          echo "✓ SHA tag verified"
+      - name: Verify pushed image
+        run: docker buildx imagetools inspect "${IMAGE_LATEST}"
 
       - name: Trigger Coolify redeploy webhook (API or signed manual fallback)
         env:
