@@ -167,6 +167,7 @@
       "placeholder": "Select project type",
       "web": "Website",
       "ai": "AI Automation",
+      "consulting": "Consulting",
       "other": "Other"
     },
     "trust": {
@@ -176,6 +177,7 @@
     }
   },
   "footer": {
-    "copyright": "Made with ❤️ in Ticino"
+    "copyright": "Made with ❤️ in Ticino",
+    "connectTitle": "Connect"
   }
 }

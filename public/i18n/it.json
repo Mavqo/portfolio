@@ -167,6 +167,7 @@
       "placeholder": "Seleziona il tipo di progetto",
       "web": "Sito web",
       "ai": "Automazione AI",
+      "consulting": "Consulenza",
       "other": "Altro"
     },
     "trust": {
@@ -176,6 +177,7 @@
     }
   },
   "footer": {
-    "copyright": "Fatto con ❤️ in Ticino"
+    "copyright": "Fatto con ❤️ in Ticino",
+    "connectTitle": "Connettiti"
   }
 }
