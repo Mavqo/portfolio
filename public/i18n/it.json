@@ -10,7 +10,7 @@
     "contact": "Contattami"
   },
   "hero": {
-    "label": "Sviluppatore Full Stack & Ingegnere Automazione AI",
+    "label": "Full Stack Developer & AI Automation Engineer",
     "headline": "Siti web moderni, pronti in giorni — non mesi",
     "subheadline": "Aiuto piccole imprese e professionisti a crescere online con siti web veloci e sistemi che automatizzano il lavoro ripetitivo.",
     "description": "Aiuto piccole imprese e professionisti a crescere online con siti web veloci e sistemi che automatizzano il lavoro ripetitivo. Basato in Ticino, lavoro con clienti in tutta la Svizzera.",
@@ -124,6 +124,16 @@
         "subtitle": "Demo iOS nativa per imprenditori artigiani che hanno bisogno di registri puliti, veloci.",
         "description": "Lista dei lavori del giorno, checklist per ogni cantiere con cronologia foto, foto geolocalizzate e condivisione PDF con un tocco.",
         "cta": "Vedi su GitHub →"
+      },
+      "leadspark": {
+        "title": "LeadSpark",
+        "description": "Piattaforma completa per cattura, qualifica e gestione lead. Automazione follow-up, scoring e integrazione CRM.",
+        "cta": "Live Demo →"
+      },
+      "medianalytics": {
+        "title": "MediAnalytics Pro",
+        "description": "Dashboard analitica professionale per centri sanitari e wellness. Gestione pazienti, prenotazioni, KPI e fatturazione — tutto in un posto.",
+        "cta": "Live Demo →"
       }
     },
     "comingSoon": "In arrivo"
@@ -150,6 +160,19 @@
     "success": {
       "title": "Grazie!",
       "message": "Ho ricevuto il tuo messaggio e ti risponderò al più presto."
+    },
+    "callCta": "Scrivimi su Upwork →",
+    "projectType": {
+      "label": "Tipo di progetto",
+      "placeholder": "Seleziona il tipo di progetto",
+      "web": "Sito web",
+      "ai": "Automazione AI",
+      "other": "Altro"
+    },
+    "trust": {
+      "response": "Risposta entro 24h",
+      "freeCall": "Prima call gratuita",
+      "noCommitment": "Nessun impegno"
     }
   },
   "footer": {

@@ -124,6 +124,16 @@
         "subtitle": "A native iOS capability demo for trade contractors who need clean records, fast.",
         "description": "Today list, job-detail checklist with photo timeline, geo-stamped camera capture, one-tap PDF share. Built for electricians, HVAC, plumbing — 1–5 crew.",
         "cta": "View on GitHub →"
+      },
+      "leadspark": {
+        "title": "LeadSpark",
+        "description": "Complete platform for lead capture, qualification, and management. Automated follow-up, scoring, and CRM integration.",
+        "cta": "Live Demo →"
+      },
+      "medianalytics": {
+        "title": "MediAnalytics Pro",
+        "description": "Professional analytics dashboard for healthcare & wellness centers. Patient management, appointment scheduling, KPI tracking, and billing — all in one place.",
+        "cta": "Live Demo →"
       }
     },
     "comingSoon": "Coming soon"
@@ -150,6 +160,19 @@
     "success": {
       "title": "Thank you!",
       "message": "I've received your message and will get back to you as soon as possible."
+    },
+    "callCta": "Message me on Upwork →",
+    "projectType": {
+      "label": "Project type",
+      "placeholder": "Select project type",
+      "web": "Website",
+      "ai": "AI Automation",
+      "other": "Other"
+    },
+    "trust": {
+      "response": "Reply within 24h",
+      "freeCall": "Free intro call",
+      "noCommitment": "No commitment"
     }
   },
   "footer": {
